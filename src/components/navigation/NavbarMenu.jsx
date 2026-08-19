@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import {ServicesNavList} from "../../data/Navigationdata/ServiceList";
 import { navigation } from "../../data/Navigationdata/NavigationList";
@@ -9,15 +9,32 @@ const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState(null);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const closeTimer = useRef(null);
+
+  const cancelClose = () => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  };
+
+  const scheduleClose = (closeMenu) => {
+    cancelClose();
+    closeTimer.current = setTimeout(closeMenu, 350);
+  };
 
   const handleServicesEnter = () => {
+    cancelClose();
     setServicesOpen(true);
+    setActiveCategory(null);
     setActiveDropdown(null);
   };
 
   const handleServicesLeave = () => {
-    setServicesOpen(false);
-    setActiveCategory(null);
+    scheduleClose(() => {
+      setServicesOpen(false);
+      setActiveCategory(null);
+    });
   };
 
   return (
@@ -71,7 +88,11 @@ const Navbar = () => {
 
 
                   {servicesOpen && (
-                    <div className="services-dropdown">
+                    <div
+                      className={`services-dropdown ${
+                        activeCategory ? "has-submenu" : ""
+                      }`}
+                    >
 
                       {/* LEFT SIDE - CATEGORIES */}
                       <div className="services-categories">
@@ -147,12 +168,11 @@ const Navbar = () => {
                   key={item.id}
                   className="nav-dropdown"
                   onMouseEnter={() => {
+                    cancelClose();
                     setActiveDropdown(item.id);
                     setServicesOpen(false);
                   }}
-                  onMouseLeave={() =>
-                    setActiveDropdown(null)
-                  }
+                  onMouseLeave={() => scheduleClose(() => setActiveDropdown(null))}
                 >
                   <Link
                     to={item.path}

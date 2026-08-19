@@ -146,8 +146,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { navigation } from "../../data/Navigationdata/Navigation";
-import { servicesNav } from "../../data/Navigationdata/Services";
+import { navigation } from "../../data/Navigationdata/NavigationList";
+import { ServicesNavList } from "../../data/Navigationdata/ServiceList";
 
 import "./Navbar.css";
 
@@ -222,7 +222,7 @@ const Navbar = () => {
                       {/* LEFT SIDE - CATEGORIES */}
                       <div className="services-categories">
 
-                        {servicesNav.map((category) => (
+                        {ServicesNavList.map((category) => (
                           <div
                             key={category.id}
                             className={`service-category-item ${

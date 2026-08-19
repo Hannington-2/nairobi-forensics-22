@@ -14,7 +14,7 @@ export const navigation = [
       children: [
         {
           id: "about-nairobi-forensics",
-          label: "About Nairobi Forensics",
+          label: "About Us",
           path: "/about",
         },
         {
@@ -55,7 +55,7 @@ export const navigation = [
       children: [
         {
           id: "banking-financial-services",
-          label: "Banking & Financial Services",
+          label: "Banking & Financial Institutions",
           path: "/industries/banking-financial-services",
         },
         {

@@ -1,0 +1,85 @@
+.placeholder-page {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: 80px 24px;
+  background: linear-gradient(135deg, #f7f9fc 0%, #ffffff 55%, #eef5ff 100%);
+}
+
+.placeholder-content {
+  width: min(680px, 100%);
+  padding: 56px 48px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(0, 26, 71, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 20px 55px rgba(0, 26, 71, 0.1);
+}
+
+.placeholder-eyebrow {
+  margin: 0 0 12px;
+  color: #0274fb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.placeholder-content h1 {
+  margin: 0;
+  color: #001a47;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+}
+
+.placeholder-message {
+  max-width: 510px;
+  margin: 20px auto 30px;
+  color: #41506a;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.placeholder-details {
+  max-width: 510px;
+  margin: 0 auto 30px;
+  color: #41506a;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.placeholder-details p {
+  margin: 0 0 10px;
+}
+
+.placeholder-details p:last-child {
+  margin-bottom: 0;
+}
+
+.placeholder-link {
+  display: inline-flex;
+  padding: 12px 20px;
+  color: #ffffff;
+  background: #0274fb;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.placeholder-link:hover {
+  background: #001a47;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .placeholder-page {
+    min-height: 65vh;
+    padding: 48px 16px;
+  }
+
+  .placeholder-content {
+    padding: 40px 24px;
+  }
+}
