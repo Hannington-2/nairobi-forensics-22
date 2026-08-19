@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import {ServicesNavList} from "../../data/Navigationdata/ServiceList";
 import { navigation } from "../../data/Navigationdata/NavigationList";
@@ -6,10 +6,22 @@ import './Navbar.css';
 
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState(null);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const closeTimer = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const cancelClose = () => {
     if (closeTimer.current) {
@@ -38,13 +50,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
 
         {/* LOGO */}
-        {/* <Link to="/" className="navbar-logo">
-          Nairobi Forensics
-        </Link> */}
+        <Link to="/" className="navbar-logo" aria-label="Nairobi Forensics home">
+          <img src="/logo.png" alt="Nairobi Forensics" />
+        </Link>
 
         {/* MAIN NAVIGATION */}
         <nav className="navbar-nav">
