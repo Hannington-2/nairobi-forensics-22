@@ -1,0 +1,18 @@
+.hero-home {
+    min-height: 100vh;
+    background:
+        linear-gradient(115deg, rgba(3, 16, 42, 0.94) 0%, rgba(6, 26, 64, 0.82) 58%, rgba(11, 79, 138, 0.62) 100%),
+        url('/images/Herobackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-home > .container {
+    max-width: none;
+    padding: 0;
+}
+
+.hero-home > .container > .hero {
+    width: 100%;
+}

@@ -1,0 +1,41 @@
+.cta-hero {
+	display: inline-flex;
+}
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 3.25rem;
+	padding: 0.85rem 1.35rem;
+	border: 1px solid transparent;
+	border-radius: var(--radius-sm);
+	font-weight: var(--font-weight-semibold);
+	text-decoration: none;
+	transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.button:hover {
+	transform: translateY(-2px);
+}
+
+.hero-btn-primary {
+	background-color: var(--color-accent);
+	color: var(--color-white);
+}
+
+.hero-btn-primary:hover {
+	background-color: var(--color-accent-light);
+	color: var(--color-primary-dark);
+}
+
+.hero-btn-secondary {
+	border-color: var(--color-accent-light);
+	background-color: transparent;
+	color: var(--color-white);
+}
+
+.hero-btn-secondary:hover {
+	background-color: var(--color-white);
+	color: var(--color-primary);
+}

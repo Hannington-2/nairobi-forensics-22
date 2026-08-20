@@ -1,0 +1,173 @@
+/* ============================================
+   NAIROBI FORENSICS LLP - DESIGN VARIABLES
+   ============================================ */
+
+:root {
+  /* ==========================================
+     BRAND COLORS
+     ========================================== */
+
+  /* Primary */
+  --color-primary: #061A40;
+  --color-primary-dark: #03102A;
+  --color-primary-light: #0B2A5B;
+
+  /* Secondary / Professional Blue */
+  --color-secondary: #0B4F8A;
+  --color-secondary-dark: #083B68;
+  --color-secondary-light: #146CBE;
+
+  /* Accent / Premium Bronze */
+  --color-accent: #B08D57;
+  --color-accent-dark: #8F7044;
+  --color-accent-light: #D1B07A;
+
+  /* ==========================================
+     NEUTRAL COLORS
+     ========================================== */
+
+  --color-white: #FFFFFF;
+  --color-off-white: #FAFBFC;
+  --color-light-gray: #F3F5F7;
+  --color-gray-100: #E5E7EB;
+  --color-gray-200: #D1D5DB;
+  --color-gray-300: #9CA3AF;
+  --color-gray-400: #6B7280;
+  --color-gray-500: #4B5563;
+  --color-gray-600: #374151;
+  --color-charcoal: #111827;
+  --color-black: #050505;
+
+  /* ==========================================
+     TEXT COLORS
+     ========================================== */
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #6B7280;
+  --color-text-light: #FFFFFF;
+
+  /* ==========================================
+     BACKGROUNDS
+     ========================================== */
+
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F3F5F7;
+  --bg-dark: #061A40;
+  --bg-dark-secondary: #03102A;
+  --bg-blue: #0B4F8A;
+
+  /* ==========================================
+     STATUS COLORS
+     ========================================== */
+
+  --color-success: #15803D;
+  --color-warning: #B45309;
+  --color-error: #B91C1C;
+  --color-info: #0B4F8A;
+
+  /* ==========================================
+     TYPOGRAPHY
+     ========================================== */
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+  --font-size-5xl: 4rem;
+
+  /* ==========================================
+     FONT WEIGHTS
+     ========================================== */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* ==========================================
+     LINE HEIGHT
+     ========================================== */
+
+  --line-height-tight: 1.1;
+  --line-height-heading: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* ==========================================
+     SPACING
+     ========================================== */
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+  --spacing-5xl: 8rem;
+
+  /* ==========================================
+     LAYOUT
+     ========================================== */
+
+  --container-width: 1200px;
+  --container-wide: 1400px;
+  --container-padding: 1.5rem;
+
+  /* ==========================================
+     BORDER RADIUS
+     ========================================== */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ==========================================
+     BORDERS
+     ========================================== */
+
+  --border-light: #E5E7EB;
+  --border-medium: #D1D5DB;
+  --border-dark: #4B5563;
+
+  /* ==========================================
+     SHADOWS
+     ========================================== */
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.20);
+
+  /* ==========================================
+     TRANSITIONS
+     ========================================== */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* ==========================================
+     Z-INDEX
+     ========================================== */
+
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-fixed: 1000;
+  --z-modal-backdrop: 2000;
+  --z-modal: 2100;
+  --z-tooltip: 3000;
+}

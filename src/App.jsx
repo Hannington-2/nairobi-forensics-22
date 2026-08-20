@@ -1,18 +1,8 @@
 // import React from "react";
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-
-// ========================================
-// LAYOUT
-// ========================================
 import NavbarMenu from "./components/Navigation/NavbarMenu";
 import PagePlaceholder from "./pages/PagePlaceholder";
-// ========================================
-// PAGES
-// Lazy loading helps reduce the initial
-// JavaScript bundle size
-// ========================================
-
 const Home = lazy(() => import("./pages/Home/Home"));
 
 // const ServicesPage = lazy(() =>
@@ -31,11 +21,6 @@ const NotFound = lazy(() =>
   import("./pages/NotFound")
 );
 
-
-// ========================================
-// LOADING COMPONENT
-// ========================================
-
 const PageLoader = () => {
   return (
     <div className="page-loader">
@@ -43,11 +28,6 @@ const PageLoader = () => {
     </div>
   );
 };
-
-
-// ========================================
-// APP
-// ========================================
 
 function App() {
   return (
