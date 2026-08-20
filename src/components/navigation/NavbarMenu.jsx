@@ -222,14 +222,6 @@ const Navbar = () => {
         </nav>
 
 
-        {/* CTA */}
-        <Link
-          to="/contact"
-          className="navbar-cta"
-        >
-          Talk to an Expert
-        </Link>
-
       </div>
     </header>
   );

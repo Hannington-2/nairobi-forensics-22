@@ -18,7 +18,7 @@
 }
 
 .navbar-container {
-  width: min(1440px, calc(100% - 48px));
+  width: min(1280px, calc(100% - 48px));
   min-height: 78px;
 
   margin: 0 auto;
@@ -27,13 +27,13 @@
   align-items: center;
   justify-content: space-between;
 
-  gap: 32px;
+  gap: clamp(24px, 3vw, 48px);
 
   transition: min-height 0.25s ease;
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.97);
+  background: rgba(172, 35, 35, 0.97);
   border-bottom-color: rgba(0, 26, 71, 0.08);
   box-shadow: 0 4px 20px rgba(0, 26, 71, 0.1);
 }
@@ -59,7 +59,7 @@
 .navbar-logo img {
   display: block;
   width: auto;
-  height: 48px;
+  height: 50px;
   object-fit: contain;
   transition: height 0.25s ease;
 }
@@ -78,8 +78,8 @@
   align-items: center;
   justify-content: center;
 
-  gap: 8px;
-  flex: 1;
+  gap: clamp(8px, 1vw, 16px);
+  flex: 0 1 auto;
 }
 
 .nav-link,
@@ -286,7 +286,7 @@
 
   transform: translateX(-50%);
 
-  width: min(920px, 85vw);
+  width: min(430px, 85vw);
   min-height: 0;
 
   display: grid;
@@ -307,6 +307,7 @@
 }
 
 .services-dropdown.has-submenu {
+  width: min(920px, 85vw);
   min-height: 390px;
   grid-template-columns: minmax(340px, 1fr) minmax(360px, 1.1fr);
 }
@@ -662,6 +663,12 @@
     border-bottom: 1px solid rgba(0, 26, 71, 0.1);
 
     box-shadow: 0 16px 35px rgba(0, 26, 71, 0.12);
+  }
+
+  .services-dropdown.has-submenu {
+    width: 100%;
+    min-height: auto;
+    grid-template-columns: 1fr;
   }
 
 
