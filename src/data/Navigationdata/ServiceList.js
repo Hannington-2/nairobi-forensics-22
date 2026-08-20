@@ -174,7 +174,12 @@ export const ServicesNavList= [
           title: "Investigative Due Diligence",
           slug: "investigative-due-diligence",
           path: "/services/corporate-investigations-valuation-due-diligence/investigative-due-diligence"
-        }
+        },
+        {
+          title: "Independent Business Review",
+          slug: "Independent Business Review",
+          path: "/services/corporate-investigations-valuation-due-diligence/Independent-Business-Review"
+        }   
       ]
     }
   ];
