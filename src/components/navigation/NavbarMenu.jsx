@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {ServicesNavList} from "../../data/Navigationdata/ServiceList";
 import { navigation } from "../../data/Navigationdata/NavigationList";
 import './Navbar.css';
 
 
 const Navbar = () => {
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState(null);
@@ -50,7 +51,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+    <header className={`navbar ${location.pathname === "/" ? "home-navbar" : ""} ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
 
         {/* LOGO */}
