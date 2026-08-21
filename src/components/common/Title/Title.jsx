@@ -1,14 +1,26 @@
-// import React from 'react';
+import './Title.css';
 
-const Title = ({titleDecription, titleHeading}) => {
+const Title = ({
+  titleDecription = '',
+  titleHeading = '',
+}) => {
   return (
-    <div className="title">
-      <div className="title-container">
-        <p>{titleDecription}</p>
-        <h2>{titleHeading}</h2>
-      </div>
+    <div className="section-title">
+      
+      {titleDecription && (
+        <span className="section-title-eyebrow">
+          {titleDecription}
+        </span>
+      )}
+
+      {titleHeading && (
+        <h2 className="section-title-heading">
+          {titleHeading}
+        </h2>
+      )}
+
     </div>
   );
-}
+};
 
 export default Title;

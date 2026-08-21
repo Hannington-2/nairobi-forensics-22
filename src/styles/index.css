@@ -21,6 +21,20 @@ body {
   line-height: var(--line-height-normal);
 }
 
+#root,
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}
+
 img {
   max-width: 100%;
   display: block;

@@ -1,0 +1,37 @@
+.section-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-top: 1.5rem;
+
+	color: #9d281f;
+	font-weight: 700;
+	text-decoration: none;
+
+	transition: color 0.2s ease;
+}
+
+.section-button:hover,
+.section-button:focus-visible {
+	color: #9d281f;
+}
+
+.section-button-right {
+	display: flex;
+	width: max-content;
+	margin-left: auto;
+}
+
+.section-button:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 4px;
+}
+
+.section-button-arrow {
+	transition: transform 0.2s ease;
+}
+
+.section-button:hover .section-button-arrow,
+.section-button:focus-visible .section-button-arrow {
+	transform: translateX(0.25rem);
+}

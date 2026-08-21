@@ -2,24 +2,21 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavbarMenu from "./components/Navigation/NavbarMenu";
+import Footer from "./components/layout/Footer";
 import PagePlaceholder from "./pages/PagePlaceholder";
 const Home = lazy(() => import("./pages/Home/Home"));
+const About = lazy(() => import("./pages/About/About"));
+const Industries = lazy(() => import("./pages/Industries/Industries"));
+const Insights = lazy(() => import("./pages/Insights/Insights"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
 
-// const ServicesPage = lazy(() =>
-//   import("./pages/Services/ServicesPage")
-// );
+const ServicesPage = lazy(() => import("./pages/Services/Services"));
 
-// const CategoryPage = lazy(() =>
-//   import("./pages/Services/CategoryPage")
-// );
+const CategoryPage = lazy(() => import("./pages/Services/CategoryPage"));
 
-// const ServiceDetailPage = lazy(() =>
-//   import("./pages/Services/ServiceDetailPage")
-// );
+const ServiceDetailPage = lazy(() => import("./pages/Services/ServiceDetailPage"));
 
-const NotFound = lazy(() =>
-  import("./pages/NotFound")
-);
+const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 
 const PageLoader = () => {
   return (
@@ -31,12 +28,13 @@ const PageLoader = () => {
 
 function App() {
   return (
-    <>
+    <div className="app-shell">
       {/* GLOBAL NAVIGATION */}
       <NavbarMenu />
 
       {/* PAGE ROUTES */}
-      <Suspense fallback={<PageLoader />}>
+      <main className="app-content">
+        <Suspense fallback={<PageLoader />}>
         <Routes>
 
           {/* HOME */}
@@ -49,7 +47,7 @@ function App() {
           {/* ABOUT */}
           <Route
             path="/about"
-            element={<PagePlaceholder section="About Us" />}
+            element={<About />}
           />
 
 
@@ -60,21 +58,21 @@ function App() {
           {/* All Services Overview */}
           <Route
             path="/services"
-            element={<PagePlaceholder section="Services" />}
+            element={<ServicesPage />}
           />
 
 
           {/* Service Category */}
           <Route
             path="/services/:categorySlug"
-            element={<PagePlaceholder section="Services" />}
+            element={<CategoryPage />}
           />
 
 
           {/* Individual Service */}
           <Route
             path="/services/:categorySlug/:serviceSlug"
-            element={<PagePlaceholder section="Services" />}
+            element={<ServiceDetailPage />}
           />
 
 
@@ -84,16 +82,21 @@ function App() {
 
           <Route
             path="/industries"
-            element={<PagePlaceholder section="Industries" />}
+            element={<Industries />}
           />
 
           <Route
             path="/insights"
-            element={<PagePlaceholder section="Insights" />}
+            element={<Insights />}
           />
 
           <Route
             path="/contact"
+            element={<Contact />}
+          />
+
+          <Route
+            path="/contact/:pageSlug"
             element={<PagePlaceholder section="Contact" />}
           />
 
@@ -105,7 +108,7 @@ function App() {
 
           <Route
             path="/services/*"
-            element={<PagePlaceholder section="Services" />}
+            element={<NotFound />}
           />
 
           <Route
@@ -126,8 +129,10 @@ function App() {
           />
 
         </Routes>
-      </Suspense>
-    </>
+        </Suspense>
+      </main>
+      <Footer />
+    </div>
   );
 }
 

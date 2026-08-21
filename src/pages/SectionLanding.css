@@ -1,0 +1,131 @@
+.section-landing {
+  min-height: calc(100vh - 78px);
+  padding: 5rem max(1.5rem, calc((100vw - 1200px) / 2));
+  color: #1b3047;
+  background: #f8f8f7;
+}
+
+.section-landing-hero {
+  max-width: 760px;
+  margin-bottom: 4rem;
+}
+
+.section-landing-eyebrow {
+  margin: 0 0 1.25rem;
+  color: #9d281f;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+.section-landing h1 {
+  max-width: 760px;
+  margin: 0 0 1.5rem;
+  color: #1b3047;
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.05;
+}
+
+.section-landing-hero > p:last-child {
+  max-width: 640px;
+  margin: 0;
+  color: #536170;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.section-landing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.landing-card {
+  min-height: 210px;
+  padding: 1.5rem;
+  color: #1b3047;
+  background: #ffffff;
+  border: 1px solid rgba(27, 48, 71, 0.1);
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.landing-card:hover,
+.landing-card:focus-visible {
+  border-color: #9d281f;
+  transform: translateY(-4px);
+}
+
+.landing-card > span {
+  color: #9d281f;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.landing-card h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.landing-card p,
+.contact-actions p {
+  margin: 0;
+  color: #536170;
+  line-height: 1.6;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 900px;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(27, 48, 71, 0.15);
+}
+
+.contact-actions h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.6rem;
+}
+
+.contact-actions .section-landing-eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.landing-action {
+  flex-shrink: 0;
+  padding: 0.9rem 1.25rem;
+  color: #ffffff;
+  background: #9d281f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.landing-action:hover,
+.landing-action:focus-visible {
+  background: #7f2019;
+}
+
+@media (max-width: 800px) {
+  .section-landing {
+    padding: 4rem 1.25rem;
+  }
+
+  .section-landing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-actions {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-landing-grid {
+    grid-template-columns: 1fr;
+  }
+}

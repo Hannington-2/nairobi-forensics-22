@@ -1,0 +1,19 @@
+.section-title-eyebrow {
+    display: block;
+    margin-bottom: 22px;
+  
+    color: #9d281f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+  }
+  
+  .section-title-heading {
+    margin: 0;
+  
+    color: #1b3047;
+    font-size: clamp(36px, 3.2vw, 52px);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }

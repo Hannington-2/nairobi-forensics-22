@@ -11,6 +11,11 @@ export const ServicesNavList= [
           path: "/services/forensic-accounting-financial-investigations/forensic-accounting"
         },
         {
+          title: "Anti-Money Laundering Experts",
+          slug: "anti-money-laundering-experts",
+          path: "/services/forensic-accounting-financial-investigations/anti-money-laundering-experts"
+        },
+        {
           title: "Financial Forensic Audits",
           slug: "financial-forensic-audits",
           path: "/services/forensic-accounting-financial-investigations/financial-forensic-audits"
@@ -177,8 +182,8 @@ export const ServicesNavList= [
         },
         {
           title: "Independent Business Review",
-          slug: "Independent Business Review",
-          path: "/services/corporate-investigations-valuation-due-diligence/Independent-Business-Review"
+          slug: "independent-business-review",
+          path: "/services/corporate-investigations-valuation-due-diligence/independent-business-review"
         }   
       ]
     }

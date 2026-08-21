@@ -1,3 +1,5 @@
+import { navigation } from "./Navigationdata/NavigationList";
+
 const servicePages = {
   "/about": {
     section: "About Us",
@@ -57,6 +59,37 @@ const servicePages = {
     details: ["Share the nature of your concern, the relevant timeline, and how we can reach you."]
   }
 };
+
+const industries = navigation.find((item) => item.id === "industries")?.children || [];
+const insights = navigation.find((item) => item.id === "insights")?.children || [];
+
+for (const industry of industries) {
+  servicePages[industry.path] = {
+    section: "Industries",
+    title: industry.label,
+    intro: `Nairobi Forensics supports ${industry.label.toLowerCase()} organisations with independent financial, investigative, and risk advisory expertise.`,
+    details: [
+      "We help leaders understand exposure, test important information, and make decisions supported by clear evidence.",
+      "Our work can be tailored to investigations, disputes, compliance reviews, recovery matters, and due diligence."
+    ]
+  };
+}
+
+for (const insight of insights) {
+  if (insight.id === "all-insights") {
+    continue;
+  }
+
+  servicePages[insight.path] = {
+    section: "Insights",
+    title: insight.label,
+    intro: `Explore Nairobi Forensics perspectives on ${insight.label.toLowerCase()} and the decisions it informs.`,
+    details: [
+      "Our insights connect practical experience with the financial, regulatory, and investigative questions organisations face.",
+      "This topic page is ready for articles, guides, case insights, and research as they are published."
+    ]
+  };
+}
 
 const serviceCategories = [
   {

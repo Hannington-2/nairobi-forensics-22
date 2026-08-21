@@ -27,7 +27,7 @@ const Hero = () => {
 
 
   return (
-    <section className="hero">
+    <section className="hero container">
         <div className="container">
             <div className="hero-container">
                 <p className='tag'>

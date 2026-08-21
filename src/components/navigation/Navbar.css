@@ -9,12 +9,12 @@
 
   width: 100%;
   /* background: transparent; */
-  /* background: linear-gradient(
+  background: linear-gradient(
     90deg,
     #061A40 0%,
     #0A2540 50%,
     #03152E 100%
-  ); */
+  );
   color: var(--color-white);
   border-bottom: 1px solid transparent;
 
