@@ -32,11 +32,11 @@ export const navigation = [
           label: "Why Choose Us",
           path: "/about/why-choose-us",
         },
-        {
-          id: "careers",
-          label: "Careers",
-          path: "/about/careers",
-        },
+        // {
+        //   id: "careers",
+        //   label: "Careers",
+        //   path: "/about/careers",
+        // },
       ],
     },
   

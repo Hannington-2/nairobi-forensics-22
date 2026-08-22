@@ -1,0 +1,82 @@
+.contact-landing {
+  position: relative;
+  overflow: hidden;
+  background: #f4efe8;
+}
+
+.contact-landing .section-landing-hero {
+  position: relative;
+  isolation: isolate;
+  max-width: 1040px;
+  margin-bottom: clamp(4rem, 8vw, 7rem);
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 6vw, 5.5rem);
+  color: #fff8f0;
+  background:
+    linear-gradient(110deg, rgba(3, 16, 42, 0.96), rgba(6, 26, 64, 0.83)),
+    url('/images/Herobackground.png') center / cover;
+  border-radius: 0 0 72px 0;
+  box-shadow: 18px 18px 0 #d4a373;
+}
+
+.contact-landing .section-landing-hero::after {
+  position: absolute;
+  z-index: -1;
+  right: -7rem;
+  bottom: -12rem;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid rgba(209, 176, 122, 0.45);
+  border-radius: 50%;
+  content: '';
+}
+
+.contact-landing .section-landing-eyebrow {
+  color: #f2c078;
+}
+
+.contact-landing h1 {
+  color: #fff8f0;
+}
+
+.contact-landing .section-landing-hero > p:last-child {
+  color: rgba(255, 248, 240, 0.82);
+}
+
+.contact-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin-top: 2.5rem;
+  color: #fff8f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.contact-hero-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.contact-hero-meta span::before {
+  width: 0.45rem;
+  height: 0.45rem;
+  background: #f2c078;
+  border-radius: 50%;
+  content: '';
+}
+
+@media (max-width: 640px) {
+  .contact-landing .section-landing-hero {
+    padding: 2rem 1.5rem;
+    border-radius: 0 0 32px 0;
+    box-shadow: 10px 10px 0 #d4a373;
+  }
+
+  .contact-hero-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 2rem;
+  }
+}

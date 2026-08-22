@@ -1,9 +1,11 @@
 // import React from "react";
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import NavbarMenu from "./components/Navigation/NavbarMenu";
-import Footer from "./components/layout/Footer";
-import PagePlaceholder from "./pages/PagePlaceholder";
+const Footer = lazy(() => import("./components/layout/Footer"));
+const FAQsection = lazy(() => import("./components/layout/FAQsection"));
+const PagePlaceholder = lazy(() => import("./pages/PagePlaceholder"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
 const Industries = lazy(() => import("./pages/Industries/Industries"));
@@ -27,6 +29,8 @@ const PageLoader = () => {
 };
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
     <div className="app-shell">
       {/* GLOBAL NAVIGATION */}
@@ -130,8 +134,13 @@ function App() {
 
         </Routes>
         </Suspense>
+        <Suspense fallback={null}>
+          {pathname !== "/" && <FAQsection pathname={pathname} />}
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

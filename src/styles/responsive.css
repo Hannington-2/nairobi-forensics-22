@@ -1,32 +1,107 @@
 /* ============================================
-   RESPONSIVE STYLES
+   SHARED RESPONSIVE SYSTEM
+   Mobile first: 320px and above
    ============================================ */
 
-/* Tablets */
-@media (max-width: 1024px) {
-  :root {
-    --container-padding: 1.25rem;
-  }
+:root {
+  --container-padding: 1.25rem;
+  --responsive-content-width: 1200px;
+}
 
-  .section {
-    padding: var(--spacing-4xl) 0;
+.content-section-container,
+.hero > .container,
+.navbar-container,
+.site-footer-inner,
+.site-footer-bottom {
+  width: min(var(--responsive-content-width), calc(100% - (var(--container-padding) * 2)));
+}
+
+.section-landing {
+  padding-inline: var(--container-padding);
+}
+
+/* Large phones: 480px */
+@media (min-width: 480px) {
+  :root {
+    --container-padding: 1.5rem;
   }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+/* Large phones / small tablets: 640px */
+@media (min-width: 640px) {
+  :root {
+    --container-padding: 2rem;
+  }
+
+  .section {
+    padding-block: var(--spacing-4xl);
+  }
+}
+
+/* Tablets: 768px */
+@media (min-width: 768px) {
+  .content-section-split .content-section-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small laptops: 1024px */
+@media (min-width: 1024px) {
+  :root {
+    --container-padding: 2.5rem;
+  }
+}
+
+/* Desktop: 1280px */
+@media (min-width: 1280px) {
+  :root {
+    --responsive-content-width: 1240px;
+  }
+}
+
+/* Large desktop: 1440px */
+@media (min-width: 1440px) {
+  :root {
+    --responsive-content-width: 1320px;
+  }
+}
+
+/* Full HD: 1920px */
+@media (min-width: 1920px) {
+  :root {
+    --responsive-content-width: 1440px;
+  }
+}
+
+/* 2K / QHD: 2560px */
+@media (min-width: 2560px) {
+  :root {
+    --responsive-content-width: 1600px;
+  }
+
+  .content-section-container {
+    padding-block: 7.5rem;
+  }
+}
+
+/* 4K and larger: 3840px */
+@media (min-width: 3840px) {
+  :root {
+    --responsive-content-width: 1800px;
+  }
+
+  .content-section-container {
+    padding-block: 10rem;
+  }
+}
+
+/* Small mobile refinements */
+@media (max-width: 479px) {
   :root {
     --container-padding: 1rem;
   }
 
   .section {
-    padding: var(--spacing-3xl) 0;
-  }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-  .section {
-    padding: var(--spacing-2xl) 0;
+    padding-block: var(--spacing-2xl);
   }
 }

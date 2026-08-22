@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import {ServicesNavList} from "../../data/Navigationdata/ServiceList";
 import { navigation } from "../../data/Navigationdata/NavigationList";
 import './Navbar.css';
@@ -11,6 +12,7 @@ const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState(null);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const closeTimer = useRef(null);
 
   useEffect(() => {
@@ -22,6 +24,20 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setMobileOpen(false);
+        setServicesOpen(false);
+        setActiveCategory(null);
+        setActiveDropdown(null);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
   }, []);
 
   const cancelClose = () => {
@@ -59,8 +75,19 @@ const Navbar = () => {
           <img src="/logo.png" alt="Nairobi Forensics" />
         </Link>
 
+        <button
+          className="mobile-menu-button"
+          type="button"
+          aria-expanded={mobileOpen}
+          aria-controls="primary-navigation"
+          aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+          onClick={() => setMobileOpen((isOpen) => !isOpen)}
+        >
+          {mobileOpen ? <FiX aria-hidden="true" /> : <FiMenu aria-hidden="true" />}
+        </button>
+
         {/* MAIN NAVIGATION */}
-        <nav className="navbar-nav">
+        <nav id="primary-navigation" className={`navbar-nav${mobileOpen ? " mobile-open" : ""}`}>
 
           {navigation.map((item) => {
 
@@ -94,9 +121,15 @@ const Navbar = () => {
                   <Link
                     to={item.path}
                     className="services-menu-trigger"
+                    onClick={(event) => {
+                      if (window.matchMedia("(max-width: 900px)").matches) {
+                        event.preventDefault();
+                        setServicesOpen((isOpen) => !isOpen);
+                      }
+                    }}
                   >
                     {item.label}
-                    <span className="arrow">▾</span>
+                    <FiChevronDown className="arrow" aria-hidden="true" />
                   </Link>
 
 
@@ -190,9 +223,15 @@ const Navbar = () => {
                   <Link
                     to={item.path}
                     className="nav-dropdown-trigger"
+                    onClick={(event) => {
+                      if (window.matchMedia("(max-width: 900px)").matches) {
+                        event.preventDefault();
+                        setActiveDropdown((activeId) => activeId === item.id ? null : item.id);
+                      }
+                    }}
                   >
                     {item.label}
-                    <span className="arrow">▾</span>
+                    <FiChevronDown className="arrow" aria-hidden="true" />
                   </Link>
 
 
