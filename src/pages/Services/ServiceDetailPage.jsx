@@ -1,48 +1,62 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Breadcrumbs from "../../components/Navigation/Breadcrumbs";
-import { getPageContent } from "../../data/pageContent";
-import { ServicesNavList } from "../../data/Navigationdata/ServiceList";
-import forensicAccounting from "../../data/ServiceData/ServiceData";
 
-function ServiceDetailPage() {
-  const { categorySlug, serviceSlug } = useParams();
-  const category = ServicesNavList.find((item) => item.slug === categorySlug);
-  const service = category?.children.find((item) => item.slug === serviceSlug);
-  const content = getPageContent(`/services/${categorySlug}/${serviceSlug}`);
-  const detailedContent = serviceSlug === forensicAccounting.slug ? forensicAccounting : null;
+import servicesData from "../../data/services/servicesData";
 
-  if (!category || !service) {
+import ServiceHero from "../../components/Service/ServiceHero";
+import ServiceOverview from "../../components/Service/ServiceOverview";
+import ServiceFeatures from "../../components/Service/ServiceFeatures";
+import ServiceProcess from "../../components/Service/ServiceProcess";
+import ServiceIndustries from "../../components/Service/ServiceIndustries";
+import ServiceFAQ from "../../components/Service/ServiceFAQ";
+import ServiceRelated from "../../components/Service/ServiceRelated";
+import ServiceCTA from "../../components/Service/ServiceCTA";
+
+import SEO from "../../components/SEO/SEO";
+import ServiceSchema from "../../components/SEO/ServiceSchema";
+
+const ServiceDetailPage = () => {
+  const { serviceSlug } = useParams();
+
+  const service = servicesData[serviceSlug];
+
+  if (!service) {
     return <h1>Service Not Found</h1>;
   }
 
   return (
     <>
+      <SEO
+        title={service.seo.title}
+        description={service.seo.description}
+        canonical={service.seo.canonical}
+      />
+
+      <ServiceSchema service={service} />
+
       <Breadcrumbs />
-      <main className="service-page">
-        <p>Services</p>
-        <h1>{detailedContent?.title || service.title}</h1>
-        <p>{detailedContent?.description || (content.title !== "Page Not Found" ? content.intro : service.description)}</p>
 
-        <section aria-labelledby="service-overview-title">
-          <h2 id="service-overview-title">
-            {detailedContent?.overview.heading || "Service Overview"}
-          </h2>
-          <p>{detailedContent?.overview.text || (content.title !== "Page Not Found" ? content.details[0] : `Explore our ${service.title.toLowerCase()} services.`)}</p>
-        </section>
+      <main className="service-detail-page">
 
-        {detailedContent?.services && (
-          <section aria-labelledby="service-support-title">
-            <h2 id="service-support-title">How we can help</h2>
-            <ul>
-              {detailedContent.services.map((item) => <li key={item}>{item}</li>)}
-            </ul>
-          </section>
-        )}
+        <ServiceHero service={service} />
 
-        <Link to="/contact">Discuss this service</Link>
+        <ServiceOverview service={service} />
+
+        <ServiceFeatures service={service} />
+
+        <ServiceProcess service={service} />
+
+        <ServiceIndustries service={service} />
+
+        <ServiceFAQ service={service} />
+
+        <ServiceRelated service={service} />
+
+        <ServiceCTA service={service} />
+
       </main>
     </>
   );
-}
+};
 
 export default ServiceDetailPage;
