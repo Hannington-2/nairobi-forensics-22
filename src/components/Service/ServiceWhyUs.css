@@ -1,0 +1,61 @@
+﻿/* src/components/Service/ServiceWhyUs.css */
+
+.service-why-us {
+  padding: 70px 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  color: #fff;
+}
+
+.service-why-us .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.service-why-us h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.service-why-us h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #b8913e;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.service-why-us p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 850px;
+  margin: 0 auto 16px;
+  text-align: center;
+}
+
+.service-why-us p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .service-why-us {
+    padding: 50px 0;
+  }
+  .service-why-us h2 {
+    font-size: 26px;
+  }
+  .service-why-us p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-why-us h2 {
+    font-size: 22px;
+  }
+}

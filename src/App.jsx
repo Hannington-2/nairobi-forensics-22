@@ -1,8 +1,9 @@
-// import React from "react";
+// src/App.jsx
+
 import { lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import NavbarMenu from "./components/Navigation/NavbarMenu";
+
 const Footer = lazy(() => import("./components/layout/Footer"));
 const FAQsection = lazy(() => import("./components/layout/FAQsection"));
 const PagePlaceholder = lazy(() => import("./pages/PagePlaceholder"));
@@ -12,12 +13,12 @@ const Industries = lazy(() => import("./pages/Industries/Industries"));
 const Insights = lazy(() => import("./pages/Insights/Insights"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 
+// Services
 const ServicesPage = lazy(() => import("./pages/Services/Services"));
-
 const CategoryPage = lazy(() => import("./pages/Services/CategoryPage"));
-
 const ServiceDetailPage = lazy(() => import("./pages/Services/ServiceDetailPage"));
 
+// 404
 const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 
 const PageLoader = () => {
@@ -39,105 +40,57 @@ function App() {
       {/* PAGE ROUTES */}
       <main className="app-content">
         <Suspense fallback={<PageLoader />}>
-        <Routes>
+          <Routes>
+            {/* HOME */}
+            <Route path="/" element={<Home />} />
 
-          {/* HOME */}
-          <Route
-            path="/"
-            element={<Home />}
-          />
+            {/* ABOUT */}
+            <Route path="/about" element={<About />} />
 
+            {/* ================================
+                SERVICES
+            ================================= */}
 
-          {/* ABOUT */}
-          <Route
-            path="/about"
-            element={<About />}
-          />
+            {/* All Services Overview */}
+            <Route path="/services" element={<ServicesPage />} />
 
+            {/* Service Category */}
+            <Route path="/services/:categorySlug" element={<CategoryPage />} />
 
-          {/* ================================
-              SERVICES
-          ================================= */}
+            {/* Individual Service - with category in URL */}
+            <Route path="/services/:categorySlug/:serviceSlug" element={<ServiceDetailPage />} />
 
-          {/* All Services Overview */}
-          <Route
-            path="/services"
-            element={<ServicesPage />}
-          />
+            {/* Individual Service - direct URL (for SEO) */}
+            <Route path="/services/:serviceSlug" element={<ServiceDetailPage />} />
 
+            {/* ================================
+                OTHER PAGES
+            ================================= */}
 
-          {/* Service Category */}
-          <Route
-            path="/services/:categorySlug"
-            element={<CategoryPage />}
-          />
+            <Route path="/industries" element={<Industries />} />
+            <Route path="/insights" element={<Insights />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact/:pageSlug" element={<PagePlaceholder section="Contact" />} />
 
+            {/* PLACEHOLDER PAGES FOR CONTENT STILL BEING BUILT */}
+            <Route path="/about/:pageSlug" element={<PagePlaceholder section="About" />} />
+            <Route path="/industries/:pageSlug" element={<PagePlaceholder section="Industries" />} />
+            <Route path="/insights/:pageSlug" element={<PagePlaceholder section="Insights" />} />
 
-          {/* Individual Service */}
-          <Route
-            path="/services/:categorySlug/:serviceSlug"
-            element={<ServiceDetailPage />}
-          />
-
-
-          {/* ================================
-              OTHER PAGES
-          ================================= */}
-
-          <Route
-            path="/industries"
-            element={<Industries />}
-          />
-
-          <Route
-            path="/insights"
-            element={<Insights />}
-          />
-
-          <Route
-            path="/contact"
-            element={<Contact />}
-          />
-
-          <Route
-            path="/contact/:pageSlug"
-            element={<PagePlaceholder section="Contact" />}
-          />
-
-          {/* PLACEHOLDER PAGES FOR CONTENT STILL BEING BUILT */}
-          <Route
-            path="/about/:pageSlug"
-            element={<PagePlaceholder section="About" />}
-          />
-
-          <Route
-            path="/services/*"
-            element={<NotFound />}
-          />
-
-          <Route
-            path="/industries/:pageSlug"
-            element={<PagePlaceholder section="Industries" />}
-          />
-
-          <Route
-            path="/insights/:pageSlug"
-            element={<PagePlaceholder section="Insights" />}
-          />
-
-
-          {/* 404 */}
-          <Route
-            path="*"
-            element={<NotFound />}
-          />
-
-        </Routes>
+            {/* Catch-all 404 */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </Suspense>
+
+        {/* FAQ SECTION (not on homepage) */}
         <Suspense fallback={null}>
-          {pathname !== "/" && <FAQsection pathname={pathname} />}
+          {pathname !== "/" && !pathname.startsWith("/services/") && (
+            <FAQsection pathname={pathname} />
+          )}
         </Suspense>
       </main>
+
+      {/* FOOTER */}
       <Suspense fallback={null}>
         <Footer />
       </Suspense>
@@ -146,4 +99,3 @@ function App() {
 }
 
 export default App;
-

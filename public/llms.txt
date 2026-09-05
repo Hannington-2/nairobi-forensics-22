@@ -1,0 +1,442 @@
+@"
+# Nairobi Forensics LLP - LLMS.txt
+# Website: https://nairobi-forensics.vercel.app
+# Last Updated: 2026-09-05
+
+---
+
+## 1. ABOUT THE COMPANY
+
+**Nairobi Forensics LLP** is a leading forensic and financial investigation firm based in Kenya, providing independent forensic accounting, financial investigation, tax forensic services, litigation support, and business advisory services to organisations, legal professionals, financial institutions, and government entities.
+
+**Core Services:**
+- Forensic Accounting & Financial Investigations
+- Tax Investigations & Forensic Tax Services
+- Financial Crime & Complex Investigations
+- Asset Tracing & Recovery Support
+- Litigation, Disputes & Expert Services
+- Corporate Investigations, Valuation & Due Diligence
+- Business Recovery & Insolvency
+
+**Contact Information:**
+- Website: https://nairobi-forensics.vercel.app
+- Contact Page: https://nairobi-forensics.vercel.app/contact
+- Email: [info@nairobi-forensics.com]
+
+---
+
+## 2. COMPLETE SERVICE LISTINGS
+
+### 2.1 FORENSIC ACCOUNTING & FINANCIAL INVESTIGATIONS
+
+#### 2.1.1 Forensic Accounting
+**URL:** /services/forensic-accounting-financial-investigations/forensic-accounting
+**Description:** Independent forensic accounting services for fraud investigations, financial irregularities, transaction analysis, asset tracing, loss quantification and complex financial disputes.
+**Key Services:**
+- Financial Investigations
+- Fraud and Misconduct Reviews
+- Transaction Tracing
+- Asset Tracing
+- Loss Quantification
+- Litigation and Dispute Support
+
+#### 2.1.2 Anti-Money Laundering Experts
+**URL:** /services/forensic-accounting-financial-investigations/anti-money-laundering-experts
+**Description:** Specialist AML advisory, financial analysis and investigation support for suspicious transactions, compliance and financial crime risks.
+**Key Services:**
+- AML Risk Assessment
+- Suspicious Transaction Analysis
+- Transaction Monitoring Review
+- Source-of-Funds Analysis
+- AML Control Assessment
+
+#### 2.1.3 Financial Forensic Audits
+**URL:** /services/forensic-accounting-financial-investigations/financial-forensic-audits
+**Description:** Detailed forensic audit services for fraud reviews, transaction testing, procurement reviews, and financial irregularities.
+**Key Services:**
+- Fraud and Financial Misconduct Reviews
+- Transaction Testing
+- Internal Control Reviews
+- Procurement and Payment Reviews
+
+#### 2.1.4 Financial Forensic Investigations
+**URL:** /services/forensic-accounting-financial-investigations/financial-forensic-investigations
+**Description:** Detailed forensic investigation of financial information, transactions, and evidence for suspected irregularities, misconduct, and fraud.
+**Key Services:**
+- Financial Investigations
+- Transaction Analysis
+- Funds Tracing
+- Financial Record Reconstruction
+- Fraud Analysis
+
+#### 2.1.5 Fraud Investigations
+**URL:** /services/forensic-accounting-financial-investigations/fraud-investigations
+**Description:** Independent fraud investigation services for employee fraud, embezzlement, procurement fraud, financial misconduct and asset misappropriation.
+**Key Services:**
+- Employee Fraud Investigation
+- Embezzlement Investigation
+- Asset Misappropriation Investigation
+- Procurement Fraud Investigation
+- Financial Statement Manipulation
+
+#### 2.1.6 Fraud Audits
+**URL:** /services/forensic-accounting-financial-investigations/fraud-audits
+**Description:** Systematic fraud audits to identify fraud indicators, control weaknesses, and irregularities.
+**Key Services:**
+- Fraud Risk Assessment
+- Transaction Testing
+- Internal Control Review
+- Irregularity Identification
+
+---
+
+### 2.2 TAX INVESTIGATIONS & FORENSIC TAX SERVICES
+
+#### 2.2.1 Tax Fraud Investigations
+**URL:** /services/tax-investigations-forensic-tax-services/tax-fraud-investigations
+**Description:** Tax fraud investigation services for suspected tax fraud, unreported transactions, and tax-related irregularities.
+**Key Services:**
+- Suspected Tax Fraud Investigation
+- Unreported Transaction Analysis
+- Financial Record Review
+- Tax-Related Financial Dispute Analysis
+
+#### 2.2.2 Tax Dispute Support
+**URL:** /services/tax-investigations-forensic-tax-services/tax-dispute-support
+**Description:** Independent tax dispute support including financial analysis, forensic tax reviews, and documentation support.
+**Key Services:**
+- Financial Analysis of Tax Disputes
+- Accounting Record Review
+- Transaction Analysis
+- Historical Financial Reviews
+
+#### 2.2.3 Forensic Tax Reviews
+**URL:** /services/tax-investigations-forensic-tax-services/forensic-tax-reviews
+**Description:** Detailed forensic tax review services for complex transactions, tax risk analysis, and historical financial analysis.
+**Key Services:**
+- Historical Financial Analysis
+- Transaction Review
+- Financial Record Reconstruction
+- Tax Risk Identification
+
+#### 2.2.4 Tax Risk Assessments
+**URL:** /services/tax-investigations-forensic-tax-services/tax-risk-assessments
+**Description:** Tax risk assessment services to identify and analyze tax-related financial risks.
+**Key Services:**
+- Financial Record Inconsistency Analysis
+- Complex Transaction Analysis
+- Tax Process Review
+- Financial Exposure Analysis
+
+#### 2.2.5 Tax Audit Support
+**URL:** /services/tax-investigations-forensic-tax-services/tax-audit-support
+**Description:** Tax audit support services including financial record review, transaction analysis, and data reconstruction.
+**Key Services:**
+- Financial Record Review
+- Transaction Analysis
+- Reconciliation Analysis
+- Financial Data Reconstruction
+
+---
+
+### 2.3 FINANCIAL CRIME & COMPLEX INVESTIGATIONS
+
+#### 2.3.1 Financial Crime Investigations
+**URL:** /services/financial-crime-complex-investigations/financial-crime-investigations
+**Description:** Financial crime investigation services for fraud, money laundering, corruption, and financial misconduct.
+**Key Services:**
+- Fraud Investigation
+- Money Laundering Analysis
+- Financial Misconduct Investigation
+- Suspicious Transaction Analysis
+
+#### 2.3.2 Cross-Border Forensic Investigations
+**URL:** /services/financial-crime-complex-investigations/cross-border-forensic-investigations
+**Description:** Cross-border forensic investigation services for complex matters involving multiple jurisdictions.
+**Key Services:**
+- Cross-Border Transaction Analysis
+- International Fund Movement Analysis
+- Multi-Jurisdiction Entity Examination
+- International Business Relationship Analysis
+
+#### 2.3.3 Transaction Analysis
+**URL:** /services/financial-crime-complex-investigations/transaction-analysis
+**Description:** Detailed financial transaction analysis services for identifying patterns, anomalies, and suspicious activity.
+**Key Services:**
+- Bank Transaction Analysis
+- Payment Pattern Analysis
+- Fund Transfer Analysis
+- Related-Party Transaction Analysis
+
+#### 2.3.4 Forensic Data Analytics
+**URL:** /services/financial-crime-complex-investigations/forensic-data-analytics
+**Description:** Data-driven financial analysis for fraud detection, anomaly identification, and investigative support.
+**Key Services:**
+- Financial Data Analysis
+- Fraud Detection
+- Anomaly Identification
+- Transaction Pattern Analysis
+
+---
+
+### 2.4 ASSET TRACING & RECOVERY SUPPORT
+
+#### 2.4.1 Asset Tracing
+**URL:** /services/asset-tracing-recovery-support/asset-tracing
+**Description:** Asset tracing services to identify assets, sources of funds, and financial relationships.
+**Key Services:**
+- Asset Identification
+- Source of Funds Analysis
+- Financial Relationship Analysis
+- Transaction Analysis
+
+#### 2.4.2 Cross-Border Asset Tracing
+**URL:** /services/asset-tracing-recovery-support/cross-border-asset-tracing
+**Description:** Cross-border asset tracing for international matters across multiple jurisdictions.
+**Key Services:**
+- Cross-Border Transaction Analysis
+- International Fund Movement Analysis
+- Entity and Ownership Analysis
+
+#### 2.4.3 Asset Recovery Support
+**URL:** /services/asset-tracing-recovery-support/asset-recovery-support
+**Description:** Financial investigation and analytical support for asset recovery efforts.
+**Key Services:**
+- Asset Tracing
+- Transaction Tracing
+- Ownership Analysis
+- Financial Evidence Preparation
+
+#### 2.4.4 Asset Verification
+**URL:** /services/asset-tracing-recovery-support/asset-verification
+**Description:** Asset verification services for financial analysis, ownership review, and due diligence.
+**Key Services:**
+- Financial Asset Analysis
+- Ownership Review
+- Transaction History Analysis
+- Asset Documentation Review
+
+---
+
+### 2.5 LITIGATION, DISPUTES & EXPERT SERVICES
+
+#### 2.5.1 Litigation Support
+**URL:** /services/litigation-disputes-expert-services/litigation-support
+**Description:** Independent financial analysis, expert reporting, and dispute resolution support.
+**Key Services:**
+- Financial Analysis
+- Expert Reporting
+- Loss Quantification
+- Financial Evidence Preparation
+
+#### 2.5.2 Expert Witness Services
+**URL:** /services/litigation-disputes-expert-services/expert-witness-services
+**Description:** Independent expert witness services for legal proceedings requiring financial expertise.
+**Key Services:**
+- Financial Analysis
+- Expert Opinions
+- Loss Quantification
+- Accounting Analysis
+
+#### 2.5.3 Financial Loss Quantification
+**URL:** /services/litigation-disputes-expert-services/financial-loss-quantification
+**Description:** Financial loss quantification services for fraud, disputes, and breach of contract matters.
+**Key Services:**
+- Loss Assessment
+- Damages Calculation
+- Financial Impact Analysis
+- Assumption Testing
+
+#### 2.5.4 Economic Damages Quantification
+**URL:** /services/litigation-disputes-expert-services/economic-damages-quantification
+**Description:** Economic damages quantification for lost profits, business interruption, and reduced business value.
+**Key Services:**
+- Lost Profits Analysis
+- Business Interruption Quantification
+- Reduced Business Value Analysis
+- Future Financial Impact Analysis
+
+---
+
+### 2.6 CORPORATE INVESTIGATIONS, VALUATION & DUE DILIGENCE
+
+#### 2.6.1 Corporate Investigations
+**URL:** /services/corporate-investigations-valuation-due-diligence/corporate-investigations
+**Description:** Corporate investigation services for employee misconduct, financial irregularities, and whistleblower allegations.
+**Key Services:**
+- Employee Misconduct Investigation
+- Financial Irregularity Investigation
+- Conflict of Interest Investigation
+- Whistleblower Investigation
+
+#### 2.6.2 Business Valuation
+**URL:** /services/corporate-investigations-valuation-due-diligence/business-valuation
+**Description:** Business valuation services for transactions, disputes, and investment decisions.
+**Key Services:**
+- Business Transaction Valuation
+- Shareholder Dispute Valuation
+- Litigation Valuation
+- M&A Valuation
+
+#### 2.6.3 Financial Due Diligence
+**URL:** /services/corporate-investigations-valuation-due-diligence/financial-due-diligence
+**Description:** Financial due diligence for acquisitions, investments, and strategic transactions.
+**Key Services:**
+- Revenue Quality Analysis
+- Profitability Analysis
+- Working Capital Analysis
+- Financial Statement Review
+
+#### 2.6.4 Investigative Due Diligence
+**URL:** /services/corporate-investigations-valuation-due-diligence/investigative-due-diligence
+**Description:** Investigative due diligence for examining business relationships and potential risks.
+**Key Services:**
+- Ownership Analysis
+- Business Relationship Examination
+- Financial Risk Identification
+- Reputation Risk Assessment
+
+#### 2.6.5 Independent Business Review
+**URL:** /services/corporate-investigations-valuation-due-diligence/independent-business-review
+**Description:** Independent business reviews for assessing financial performance, viability, and prospects.
+**Key Services:**
+- Financial Performance Analysis
+- Cash Flow Analysis
+- Viability Assessment
+- Operational Performance Review
+
+---
+
+### 2.7 BUSINESS RECOVERY & INSOLVENCY
+
+#### 2.7.1 Business Recovery
+**URL:** /services/business-recovery
+**Description:** Business recovery services for organisations facing financial distress.
+**Key Services:**
+- Financial Distress Assessment
+- Turnaround Strategy Development
+- Cash Flow Management
+- Recovery Planning
+
+#### 2.7.2 Business Turnaround
+**URL:** /services/business-turnaround
+**Description:** Business turnaround services for financial recovery and operational improvement.
+**Key Services:**
+- Financial Turnaround
+- Operational Improvement
+- Restructuring
+- Viability Assessment
+
+#### 2.7.3 Insolvency Services
+**URL:** /services/insolvency-services
+**Description:** Insolvency advisory services for financial distress and restructuring.
+**Key Services:**
+- Financial Distress Assessment
+- Insolvency Analysis
+- Business Viability Assessment
+- Stakeholder Financial Analysis
+
+#### 2.7.4 Corporate Restructuring
+**URL:** /services/corporate-restructuring
+**Description:** Corporate restructuring services for financial and operational transformation.
+**Key Services:**
+- Financial Restructuring
+- Business Restructuring
+- Corporate Recovery Planning
+- Turnaround Strategy
+
+---
+
+## 3. SITE ARCHITECTURE
+
+### 3.1 Main Navigation
+- Home: /
+- About: /about
+- Services: /services
+  - Forensic Accounting & Financial Investigations: /services/forensic-accounting-financial-investigations
+  - Tax Investigations & Forensic Tax Services: /services/tax-investigations-forensic-tax-services
+  - Financial Crime & Complex Investigations: /services/financial-crime-complex-investigations
+  - Asset Tracing & Recovery Support: /services/asset-tracing-recovery-support
+  - Litigation, Disputes & Expert Services: /services/litigation-disputes-expert-services
+  - Corporate Investigations, Valuation & Due Diligence: /services/corporate-investigations-valuation-due-diligence
+- Industries: /industries
+- Insights: /insights
+- Contact: /contact
+
+### 3.2 URL Structure
+- Category: /services/:categorySlug
+- Service: /services/:categorySlug/:serviceSlug
+- Direct Service (SEO): /services/:serviceSlug
+
+---
+
+## 4. KEYWORDS & SEARCH TERMS
+
+### 4.1 Primary Keywords
+- Forensic Accounting Kenya
+- Fraud Investigation Kenya
+- Financial Investigation Kenya
+- Tax Fraud Investigation Kenya
+- Asset Tracing Kenya
+- Litigation Support Kenya
+- Business Valuation Kenya
+
+### 4.2 Secondary Keywords
+- Forensic Accountant Nairobi
+- AML Experts Kenya
+- Tax Dispute Support Kenya
+- Corporate Investigation Kenya
+- Financial Due Diligence Kenya
+- Expert Witness Kenya
+- Business Recovery Kenya
+
+---
+
+## 5. INDUSTRIES SERVED
+
+Nairobi Forensics LLP serves clients across all industries including:
+- Financial Services
+- Banking
+- Insurance
+- Manufacturing
+- Construction
+- Real Estate
+- Professional Services
+- Legal Profession
+- Healthcare
+- Education
+- Government & Public Sector
+- Non-Profit Organisations
+- Family Businesses
+- Corporate Organisations
+
+---
+
+## 6. LOCATIONS
+
+- Kenya (Primary)
+- Nairobi (Headquarters)
+- East Africa (Regional)
+- Cross-Border (International)
+
+---
+
+## 7. CONTACT INFORMATION
+
+- Website: https://nairobi-forensics.vercel.app
+- Contact Page: https://nairobi-forensics.vercel.app/contact
+- Email: [info@nairobi-forensics.com]
+- Phone: [Add phone number]
+
+---
+
+## 8. ABOUT THIS FILE
+
+This llms.txt file is designed to help AI systems, LLMs, and search engines understand the structure, services, and content of the Nairobi Forensics LLP website. It provides a comprehensive overview of all services, site architecture, and key information for better indexing and retrieval.
+
+**Last Updated:** 2026-09-05
+**Version:** 1.0
+"@ | Out-File -FilePath "public/llms.txt" -Encoding utf8
+
+Write-Host "✅ llms.txt created successfully!" -ForegroundColor Green
+Write-Host "📍 File location: public/llms.txt" -ForegroundColor Yellow

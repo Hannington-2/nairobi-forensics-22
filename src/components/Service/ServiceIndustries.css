@@ -1,0 +1,78 @@
+﻿/* src/components/Service/ServiceIndustries.css */
+
+.service-industries {
+  padding: 70px 0;
+  background: #f8f9fa;
+}
+
+.service-industries .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.service-industries h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.service-industries h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #b8913e;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.industry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.industry-tag {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #ffffff;
+  color: #333;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.industry-tag:hover {
+  background: #b8913e;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 145, 62, 0.25);
+  border-color: #b8913e;
+}
+
+@media (max-width: 768px) {
+  .service-industries {
+    padding: 50px 0;
+  }
+  .service-industries h2 {
+    font-size: 26px;
+  }
+  .industry-tag {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-industries h2 {
+    font-size: 22px;
+  }
+}

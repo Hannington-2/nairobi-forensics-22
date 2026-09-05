@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ================================ -->
+  <!-- HOMEPAGE -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- ABOUT -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/about</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- SERVICES - CATEGORIES -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/forensic-accounting-financial-investigations</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/tax-investigations-forensic-tax-services</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/financial-crime-complex-investigations</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/asset-tracing-recovery-support</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/litigation-disputes-expert-services</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/corporate-investigations-valuation-due-diligence</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- SERVICES - FORENSIC ACCOUNTING -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/forensic-accounting-financial-investigations/forensic-accounting</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/forensic-accounting-financial-investigations/anti-money-laundering-experts</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/forensic-accounting-financial-investigations/financial-forensic-audits</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/forensic-accounting-financial-investigations/financial-forensic-investigations</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/forensic-accounting-financial-investigations/fraud-investigations</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/forensic-accounting-financial-investigations/fraud-audits</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- SERVICES - TAX -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/tax-investigations-forensic-tax-services/tax-fraud-investigations</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/tax-investigations-forensic-tax-services/tax-dispute-support</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/tax-investigations-forensic-tax-services/forensic-tax-reviews</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/tax-investigations-forensic-tax-services/tax-risk-assessments</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/tax-investigations-forensic-tax-services/tax-audit-support</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- SERVICES - FINANCIAL CRIME -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/financial-crime-complex-investigations/financial-crime-investigations</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/financial-crime-complex-investigations/cross-border-forensic-investigations</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/financial-crime-complex-investigations/transaction-analysis</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/financial-crime-complex-investigations/forensic-data-analytics</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- SERVICES - ASSET TRACING -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/asset-tracing-recovery-support/asset-tracing</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/asset-tracing-recovery-support/cross-border-asset-tracing</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/asset-tracing-recovery-support/asset-recovery-support</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/asset-tracing-recovery-support/asset-verification</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- SERVICES - LITIGATION -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/litigation-disputes-expert-services/litigation-support</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/litigation-disputes-expert-services/expert-witness-services</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/litigation-disputes-expert-services/financial-loss-quantification</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/litigation-disputes-expert-services/economic-damages-quantification</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- SERVICES - CORPORATE -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/corporate-investigations-valuation-due-diligence/corporate-investigations</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/corporate-investigations-valuation-due-diligence/business-valuation</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/corporate-investigations-valuation-due-diligence/financial-due-diligence</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/corporate-investigations-valuation-due-diligence/investigative-due-diligence</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/services/corporate-investigations-valuation-due-diligence/independent-business-review</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- OTHER PAGES -->
+  <!-- ================================ -->
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/industries</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/insights</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nairobi-forensics.vercel.app/contact</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

@@ -71,7 +71,12 @@ const Navbar = () => {
       <div className="navbar-container">
 
         {/* LOGO */}
-        <Link to="/" className="navbar-logo" aria-label="Nairobi Forensics home">
+        <Link
+          to="/"
+          className="navbar-logo"
+          aria-label="Nairobi Forensics home"
+          onClick={() => setMobileOpen(false)}
+        >
           <img src="/logo.png" alt="Nairobi Forensics" />
         </Link>
 
@@ -86,6 +91,15 @@ const Navbar = () => {
           {mobileOpen ? <FiX aria-hidden="true" /> : <FiMenu aria-hidden="true" />}
         </button>
 
+        {mobileOpen && (
+          <button
+            className="mobile-nav-backdrop"
+            type="button"
+            aria-label="Close navigation menu"
+            onClick={() => setMobileOpen(false)}
+          />
+        )}
+
         {/* MAIN NAVIGATION */}
         <nav id="primary-navigation" className={`navbar-nav${mobileOpen ? " mobile-open" : ""}`}>
 
@@ -99,7 +113,8 @@ const Navbar = () => {
                 <Link
                   key={item.id}
                   to={item.path}
-                  className="nav-link"
+                  className={`nav-link${item.id === "contact" ? " nav-link-contact" : ""}`}
+                  onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
                 </Link>
@@ -155,7 +170,7 @@ const Navbar = () => {
                               setActiveCategory(category)
                             }
                           >
-                            <Link to={category.path}>
+                            <Link to={category.path} onClick={() => setMobileOpen(false)}>
                               <span>{category.title}</span>
 
                               {category.children?.length > 0 && (
@@ -177,6 +192,7 @@ const Navbar = () => {
                           <Link
                             to={activeCategory.path}
                             className="submenu-title"
+                            onClick={() => setMobileOpen(false)}
                           >
                             {activeCategory.title}
                           </Link>
@@ -188,6 +204,7 @@ const Navbar = () => {
                                 key={service.slug}
                                 to={service.path}
                                 className="submenu-link"
+                                onClick={() => setMobileOpen(false)}
                               >
                                 {service.title}
                               </Link>
@@ -243,6 +260,7 @@ const Navbar = () => {
                           key={child.id}
                           to={child.path}
                           className="nav-dropdown-link"
+                          onClick={() => setMobileOpen(false)}
                         >
                           {child.label}
                         </Link>

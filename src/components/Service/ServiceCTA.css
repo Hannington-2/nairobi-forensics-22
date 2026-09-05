@@ -1,0 +1,94 @@
+﻿/* src/components/Service/ServiceCTA.css */
+
+.service-cta {
+  padding: 70px 0;
+  background: linear-gradient(135deg, #b8913e 0%, #a07d35 50%, #8a6b2d 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.service-cta .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.cta-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.90);
+  margin-bottom: 32px;
+}
+
+.cta-content .btn-primary {
+  display: inline-block;
+  padding: 16px 48px;
+  background: #ffffff;
+  color: #b8913e;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+}
+
+.cta-content .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .service-cta {
+    padding: 50px 0;
+  }
+  .cta-content h2 {
+    font-size: 28px;
+  }
+  .cta-content p {
+    font-size: 16px;
+  }
+  .cta-content .btn-primary {
+    padding: 14px 36px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-content h2 {
+    font-size: 24px;
+  }
+  .cta-content .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}

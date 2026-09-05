@@ -8,7 +8,7 @@
   z-index: 1000;
 
   width: 100%;
-  background: #061a40;
+  background: linear-gradient(105deg, #03102a 0%, #061a40 58%, #0b2a5b 100%);
   color: var(--color-white);
   border-bottom: 1px solid transparent;
 
@@ -32,17 +32,17 @@
 
 
 .navbar-container {
-  width: min(1280px, calc(100% - 48px));
+  width: min(1320px, calc(100% - 48px));
   min-height: 78px;
 
   margin: 0 auto;
   /* background-color: red; */
-  padding-inline: 2rem;
+  padding-inline: clamp(1rem, 2vw, 2rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  gap: clamp(24px, 3vw, 48px);
+  gap: clamp(28px, 4vw, 64px);
 
   transition: min-height 0.25s ease;
 }
@@ -69,6 +69,12 @@
 
   text-decoration: none;
   white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-logo:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .navbar-logo img {
@@ -93,7 +99,7 @@
   align-items: center;
   justify-content: center;
 
-  gap: clamp(8px, 1vw, 16px);
+  gap: clamp(10px, 1.25vw, 20px);
   flex: 0 1 auto;
 }
 
@@ -103,7 +109,8 @@
   align-items: center;
   gap: 7px;
 
-  padding: 12px 14px;
+  min-height: 46px;
+  padding: 11px 16px;
 
   color: #ffffff;
 
@@ -165,7 +172,8 @@
   align-items: center;
   gap: 7px;
 
-  padding: 12px 14px;
+  min-height: 46px;
+  padding: 11px 16px;
 
   color: #ffffff;
 
@@ -643,6 +651,10 @@
   height: 1.35rem;
 }
 
+.mobile-nav-backdrop {
+  display: none;
+}
+
 
 /* =========================================
    MOBILE NAVIGATION
@@ -677,27 +689,48 @@
   }
 
 
-  /* Hide desktop navigation */
+  /* Side drawer navigation */
 
   .navbar-nav {
-    position: absolute;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    z-index: 1002;
 
-    top: calc(100% + 1px);
-    left: 0;
-
-    width: 100%;
-
-    display: none;
+    width: min(360px, 88vw);
+    max-height: calc(100dvh - 70px);
+    display: flex;
     flex-direction: column;
     align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    box-sizing: border-box;
 
-    padding: 14px 16px 22px;
+    padding: 18px 16px 28px;
 
     background: #ffffff;
 
-    border-bottom: 1px solid rgba(0, 26, 71, 0.1);
+    border-left: 1px solid rgba(0, 26, 71, 0.12);
 
-    box-shadow: 0 16px 35px rgba(0, 26, 71, 0.12);
+    box-shadow: -18px 0 45px rgba(0, 26, 71, 0.18);
+    overflow-y: auto;
+    transform: translateX(105%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-nav-backdrop {
+    position: fixed;
+    inset: 70px 0 0;
+    z-index: 1001;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: rgba(3, 16, 42, 0.5);
+    cursor: default;
+    opacity: 0;
+    animation: mobileBackdropIn 0.3s ease forwards;
   }
 
   .services-dropdown.has-submenu {
@@ -710,9 +743,7 @@
   /* Navbar.jsx adds this class when open */
 
   .navbar-nav.mobile-open {
-    max-height: calc(100vh - 70px);
-    overflow-y: auto;
-    display: flex;
+    transform: translateX(0);
   }
 
 
@@ -723,6 +754,7 @@
   .nav-dropdown-trigger {
     width: 100%;
 
+    min-height: 52px;
     padding: 14px 12px;
 
     justify-content: space-between;
@@ -754,7 +786,7 @@
 
     width: 100%;
     margin-top: 4px;
-    padding: 6px 0;
+    padding: 6px 0 10px;
 
     transform: none;
 
@@ -842,7 +874,7 @@
   .service-category-item a {
     min-height: 48px;
 
-    padding: 12px 14px;
+    padding: 13px 14px;
 
     font-size: 0.88rem;
   }
@@ -853,7 +885,7 @@
   .service-submenu {
     margin: 0 0 8px 14px;
 
-    padding: 14px;
+    padding: 16px;
 
     background: #f7f9fc;
 
@@ -907,8 +939,13 @@
   }
 
   .navbar-nav {
-    padding-left: 12px;
-    padding-right: 12px;
+    top: 64px;
+    max-height: calc(100dvh - 64px);
+    padding: 14px 12px 22px;
+  }
+
+  .mobile-nav-backdrop {
+    inset: 64px 0 0;
   }
 
   .service-category-item a {
@@ -935,4 +972,22 @@
     opacity: 1;
     transform: translateX(-50%) translateY(0);
   }
+}
+
+.nav-link-contact {
+  margin-left: 6px;
+  color: #03102a;
+  background: var(--color-accent-light);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.nav-link-contact:hover,
+.nav-link-contact:focus-visible {
+  color: #03102a;
+  background: #e1c18d;
+}
+
+@keyframes mobileBackdropIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

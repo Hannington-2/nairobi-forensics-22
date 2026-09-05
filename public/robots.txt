@@ -1,0 +1,47 @@
+﻿# robots.txt for Nairobi Forensics LLP
+# https://nairobi-forensics.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nairobi-forensics.vercel.app/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /static/
+
+# Crawl-delay for heavy crawlers
+Crawl-delay: 1
+
+# Allow all bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# AI bots - allow for better AI discovery
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /

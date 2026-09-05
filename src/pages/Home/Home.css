@@ -1,15 +1,28 @@
 .home-page {
+    overflow: hidden;
     background-color: var(--color-off-white);
 }
 
 .hero-home {
-    min-height: 100vh;
+    position: relative;
+    min-height: 100svh;
     background:
         linear-gradient(115deg, rgba(3, 16, 42, 0.94) 0%, rgba(6, 26, 64, 0.82) 58%, rgba(11, 79, 138, 0.62) 100%),
         url('/images/Herobackground.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.hero-home::before {
+    position: absolute;
+    inset: auto 8% 9% auto;
+    width: min(28vw, 360px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(209, 176, 122, 0.24);
+    border-radius: 50%;
+    content: "";
+    pointer-events: none;
 }
 
 .hero-home > .hero {
@@ -84,6 +97,139 @@
 
 .home-OUR-SERVICES .section-button {
     margin-top: 0;
+}
+
+.service-cards-section {
+    padding: 0 max(var(--container-padding), calc((100% - var(--container-wide)) / 2)) clamp(4.5rem, 8vw, 7rem);
+    background: var(--color-light-gray);
+}
+
+.service-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: #cfd8e3;
+}
+
+.service-cards-grid .service-card {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.service-cards-grid .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(6, 26, 64, 0.12);
+}
+
+.home-process-section {
+    padding: clamp(4.5rem, 8vw, 7rem) max(var(--container-padding), calc((100% - var(--container-wide)) / 2));
+    background: #ffffff;
+}
+
+.home-process-heading {
+    max-width: 760px;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.home-process-eyebrow {
+    margin: 0 0 var(--spacing-md);
+    color: var(--color-accent-dark);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.12em;
+}
+
+.home-process-heading h2 {
+    margin: 0;
+    color: var(--color-primary);
+    font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
+.home-process-heading > p:last-child {
+    max-width: 640px;
+    margin: var(--spacing-lg) 0 0;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-md);
+}
+
+.home-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: #d7dee8;
+}
+
+.home-process-card {
+    position: relative;
+    min-height: 270px;
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    background: #f8fafc;
+}
+
+.home-process-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    color: var(--color-accent-dark);
+}
+
+.home-process-card-top svg {
+    width: 1.65rem;
+    height: 1.65rem;
+}
+
+.home-process-number {
+    color: var(--color-primary-light);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.12em;
+}
+
+.home-process-card h3 {
+    margin: 0 0 var(--spacing-sm);
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+}
+
+.home-process-card p {
+    max-width: 340px;
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+.home-process-rule {
+    position: absolute;
+    right: 2.25rem;
+    bottom: 2rem;
+    left: 2.25rem;
+    height: 2px;
+    background: var(--color-accent-light);
+    transform-origin: left;
+    transition: transform var(--transition-normal);
+}
+
+.home-process-card:hover .home-process-rule {
+    transform: scaleX(0.45);
+}
+
+.home-process-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: 2rem;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+.home-process-link svg {
+    transition: transform var(--transition-fast);
+}
+
+.home-process-link:hover svg {
+    transform: translate(3px, -3px);
 }
 
 .who-we-help-section {
@@ -325,6 +471,11 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .service-cards-grid,
+    .home-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .home-news-cta {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
@@ -355,5 +506,14 @@
     .home-news-cta-form button {
         justify-content: center;
         width: 100%;
+    }
+
+    .service-cards-grid,
+    .home-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-process-card {
+        min-height: 240px;
     }
 }

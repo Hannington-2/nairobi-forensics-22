@@ -1,0 +1,143 @@
+﻿/* src/components/Service/ServiceFAQ.css */
+
+.service-faq {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.service-faq .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.service-faq h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.service-faq h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #b8913e;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.faq-item {
+  background: #f8f9fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #d4c5a0;
+}
+
+.faq-item.is-open {
+  border-color: #b8913e;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1a1a2e;
+  text-align: left;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  line-height: 1.4;
+}
+
+.faq-question:hover {
+  background: rgba(184, 145, 62, 0.05);
+}
+
+.faq-item.is-open .faq-question {
+  background: rgba(184, 145, 62, 0.05);
+  color: #b8913e;
+}
+
+.faq-toggle {
+  font-size: 26px;
+  color: #b8913e;
+  font-weight: 300;
+  flex-shrink: 0;
+  margin-left: 16px;
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.faq-item.is-open .faq-toggle {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 24px 20px;
+  animation: slideDown 0.3s ease;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-faq {
+    padding: 50px 0;
+  }
+  .service-faq h2 {
+    font-size: 26px;
+  }
+  .faq-question {
+    font-size: 15px;
+    padding: 14px 18px;
+  }
+  .faq-answer {
+    padding: 0 18px 16px;
+  }
+  .faq-answer p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-faq h2 {
+    font-size: 22px;
+  }
+}

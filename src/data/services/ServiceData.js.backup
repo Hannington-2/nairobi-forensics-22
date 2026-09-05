@@ -1,0 +1,1569 @@
+﻿// src/data/services/ServiceData.js
+
+const servicesData = {
+  // ============================================================
+  // FORENSIC ACCOUNTING & FINANCIAL INVESTIGATIONS
+  // ============================================================
+
+  "forensic-accounting": {
+    slug: "forensic-accounting",
+    categorySlug: "forensic-accounting-financial-investigations",
+    category: "Forensic Accounting & Financial Investigations",
+    title: "Forensic Accounting Services in Kenya",
+    shortTitle: "Forensic Accounting",
+    eyebrow: "Forensic Accounting Services",
+    hero: {
+      heading: "Forensic Accounting Services in Kenya",
+      subheading: "Independent Financial Investigation, Analysis and Evidence-Led Reporting",
+      description: "Nairobi Forensics LLP provides forensic accounting services in Kenya."
+    },
+    overview: {
+      heading: "What Is Forensic Accounting?",
+      paragraphs: ["Forensic accounting combines accounting, financial analysis, investigation and evidence-based reporting."]
+    },
+    services: [
+      { title: "Financial Investigations", description: "Investigation of complex financial transactions." },
+      { title: "Fraud and Misconduct Reviews", description: "Review of financial records where fraud is suspected." }
+    ],
+    situations: ["Suspected employee fraud", "Embezzlement", "Unexplained financial losses"],
+    process: [
+      { number: "01", title: "Understand the Matter", description: "We establish the nature of the issue." },
+      { number: "02", title: "Define the Scope", description: "We establish an appropriate scope." }
+    ],
+    industries: ["Financial Services", "Manufacturing", "Construction"],
+    audiences: ["Businesses", "Legal Professionals", "Financial Institutions"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["Nairobi Forensics LLP combines forensic accounting, financial investigation and litigation support."]
+    },
+    faqs: [
+      { question: "What does a forensic accountant do?", answer: "A forensic accountant investigates financial information to establish facts." }
+    ],
+    relatedServices: [
+      { title: "Fraud Investigations", slug: "fraud-investigations" }
+    ],
+    cta: {
+      heading: "Discuss Your Forensic Accounting Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "fraud-investigations": {
+    slug: "fraud-investigations",
+    categorySlug: "forensic-accounting-financial-investigations",
+    category: "Forensic Accounting & Financial Investigations",
+    title: "Fraud Investigation Services in Kenya",
+    shortTitle: "Fraud Investigations",
+    eyebrow: "Fraud Investigation Services",
+    hero: {
+      heading: "Fraud Investigation Services in Kenya",
+      subheading: "Independent Investigation of Suspected Fraud",
+      description: "Nairobi Forensics LLP provides fraud investigation services in Kenya."
+    },
+    overview: {
+      heading: "What Is a Fraud Investigation?",
+      paragraphs: ["A fraud investigation involves systematic examination of financial records."]
+    },
+    services: [
+      { title: "Employee Fraud", description: "Investigation of fraud committed by employees." },
+      { title: "Embezzlement", description: "Investigation of embezzlement." }
+    ],
+    situations: ["Suspected employee fraud", "Embezzlement", "Asset misappropriation"],
+    process: [
+      { number: "01", title: "Initial Assessment", description: "We assess available information." },
+      { number: "02", title: "Investigation Planning", description: "The scope is defined." }
+    ],
+    industries: ["Financial Services", "Manufacturing", "Construction"],
+    audiences: ["Boards", "Management", "Legal Professionals"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent fraud investigation services."]
+    },
+    faqs: [
+      { question: "What should a company do when fraud is suspected?", answer: "Preserve relevant information and obtain professional advice." }
+    ],
+    relatedServices: [
+      { title: "Forensic Accounting", slug: "forensic-accounting" }
+    ],
+    cta: {
+      heading: "Contact Nairobi Forensics LLP",
+      text: "If your organisation requires an independent fraud investigation, contact us.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "financial-forensic-investigations": {
+    slug: "financial-forensic-investigations",
+    categorySlug: "forensic-accounting-financial-investigations",
+    category: "Forensic Accounting & Financial Investigations",
+    title: "Financial Forensic Investigation Services in Kenya",
+    shortTitle: "Financial Forensic Investigations",
+    eyebrow: "Financial Forensic Investigations",
+    hero: {
+      heading: "Financial Forensic Investigation Services in Kenya",
+      subheading: "Detailed Examination of Financial Information",
+      description: "Nairobi Forensics LLP provides financial forensic investigation services."
+    },
+    overview: {
+      heading: "What Is a Financial Forensic Investigation?",
+      paragraphs: ["Financial forensic investigations involve detailed examination of financial information."]
+    },
+    services: [
+      { title: "Financial Investigations", description: "Investigation of financial irregularities." },
+      { title: "Transaction Analysis", description: "Detailed analysis of financial transactions." }
+    ],
+    situations: ["Suspected financial irregularities", "Employee fraud", "Financial misconduct"],
+    process: [
+      { number: "01", title: "Identify the Issue", description: "We establish the financial concern." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate scope." }
+    ],
+    industries: ["Financial Services", "Manufacturing", "Construction"],
+    audiences: ["Businesses", "Legal Professionals", "Financial Institutions"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent financial forensic investigation services."]
+    },
+    faqs: [
+      { question: "What is a financial forensic investigation?", answer: "It involves detailed examination of financial information." }
+    ],
+    relatedServices: [
+      { title: "Forensic Accounting", slug: "forensic-accounting" }
+    ],
+    cta: {
+      heading: "Discuss Your Financial Investigation Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "financial-forensic-audits": {
+    slug: "financial-forensic-audits",
+    categorySlug: "forensic-accounting-financial-investigations",
+    category: "Forensic Accounting & Financial Investigations",
+    title: "Forensic Audit Services in Kenya",
+    shortTitle: "Financial Forensic Audits",
+    eyebrow: "Forensic Audit Services",
+    hero: {
+      heading: "Forensic Audit Services in Kenya",
+      subheading: "Detailed Examination of Financial Records",
+      description: "Nairobi Forensics LLP provides forensic audit services in Kenya."
+    },
+    overview: {
+      heading: "What Is a Forensic Audit?",
+      paragraphs: ["A forensic audit is a detailed examination of financial records."]
+    },
+    services: [
+      { title: "Fraud Reviews", description: "Examination of financial records where fraud is suspected." },
+      { title: "Transaction Testing", description: "Detailed testing of transactions." }
+    ],
+    situations: ["Suspected employee fraud", "Procurement irregularities", "Unusual payments"],
+    process: [
+      { number: "01", title: "Understand the Concern", description: "We establish the nature of the concern." },
+      { number: "02", title: "Define the Audit Scope", description: "We establish an appropriate scope." }
+    ],
+    industries: ["Financial Services", "Manufacturing", "Construction"],
+    audiences: ["Boards", "Management", "Audit Committees"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent forensic audit services."]
+    },
+    faqs: [
+      { question: "What is a forensic audit?", answer: "A forensic audit investigates specific concerns." }
+    ],
+    relatedServices: [
+      { title: "Forensic Accounting", slug: "forensic-accounting" }
+    ],
+    cta: {
+      heading: "Discuss Your Forensic Audit Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "anti-money-laundering-experts": {
+    slug: "anti-money-laundering-experts",
+    categorySlug: "forensic-accounting-financial-investigations",
+    category: "Forensic Accounting & Financial Investigations",
+    title: "Anti-Money Laundering Experts in Kenya",
+    shortTitle: "Anti-Money Laundering Experts",
+    eyebrow: "AML Advisory & Investigation Support",
+    hero: {
+      heading: "Anti-Money Laundering Experts in Kenya",
+      subheading: "Specialist Financial Analysis for AML Concerns",
+      description: "Nairobi Forensics LLP provides specialist anti-money laundering advisory and investigation support."
+    },
+    overview: {
+      heading: "What We Support",
+      paragraphs: ["We provide independent forensic and financial analysis for AML concerns."]
+    },
+    services: [
+      { title: "AML Risk Assessment", description: "Review of financial activity to identify AML risks." },
+      { title: "Suspicious Transaction Analysis", description: "Detailed examination of potentially suspicious transactions." }
+    ],
+    situations: ["Suspicious financial transactions", "Unexplained movement of funds", "AML control concerns"],
+    process: [
+      { number: "01", title: "Understand the Concern", description: "We establish the nature of the AML concern." },
+      { number: "02", title: "Define the Scope", description: "We establish an appropriate scope of work." }
+    ],
+    industries: ["Financial Services", "Banking", "Insurance", "Real Estate"],
+    audiences: ["Financial Institutions", "Banks", "Legal Professionals"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent financial analysis for AML-related concerns."]
+    },
+    faqs: [
+      { question: "What does an AML expert do?", answer: "An AML expert analyses financial records to identify money laundering risks." }
+    ],
+    relatedServices: [
+      { title: "Financial Crime Investigations", slug: "financial-crime-investigations" }
+    ],
+    cta: {
+      heading: "Discuss Your AML Concerns",
+      text: "Contact Nairobi Forensics LLP to discuss your AML requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  // ============================================================
+  // TAX INVESTIGATIONS & FORENSIC TAX SERVICES
+  // ============================================================
+
+  "tax-dispute-support": {
+    slug: "tax-dispute-support",
+    categorySlug: "tax-investigations-forensic-tax-services",
+    category: "Tax Investigations & Forensic Tax Services",
+    title: "Tax Dispute Support Services in Kenya",
+    shortTitle: "Tax Dispute Support",
+    eyebrow: "Tax Dispute Support",
+    hero: {
+      heading: "Tax Dispute Support Services in Kenya",
+      subheading: "Independent Financial Analysis for Tax Disputes",
+      description: "Nairobi Forensics LLP provides tax dispute support services in Kenya."
+    },
+    overview: {
+      heading: "What Is Tax Dispute Support?",
+      paragraphs: ["Tax dispute support involves independent financial analysis for tax-related disputes."]
+    },
+    services: [
+      { title: "Financial Record Review", description: "Detailed review of financial records." },
+      { title: "Transaction Analysis", description: "Analysis of transactions for tax disputes." }
+    ],
+    situations: ["Tax disputes", "Complex tax queries", "Record inconsistencies"],
+    process: [
+      { number: "01", title: "Understand the Dispute", description: "We establish the nature of the dispute." },
+      { number: "02", title: "Define Support Scope", description: "We establish an appropriate support scope." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "SMEs"],
+    audiences: ["Businesses", "Legal Professionals", "Tax Advisers"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent tax dispute support services."]
+    },
+    faqs: [
+      { question: "What is tax dispute support?", answer: "It provides independent financial analysis for tax disputes." }
+    ],
+    relatedServices: [
+      { title: "Forensic Tax Reviews", slug: "forensic-tax-reviews" }
+    ],
+    cta: {
+      heading: "Discuss Your Tax Dispute Support Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "forensic-tax-reviews": {
+    slug: "forensic-tax-reviews",
+    categorySlug: "tax-investigations-forensic-tax-services",
+    category: "Tax Investigations & Forensic Tax Services",
+    title: "Forensic Tax Review Services in Kenya",
+    shortTitle: "Forensic Tax Reviews",
+    eyebrow: "Forensic Tax Reviews",
+    hero: {
+      heading: "Forensic Tax Review Services in Kenya",
+      subheading: "Detailed Examination of Financial Information for Tax-Related Questions",
+      description: "Nairobi Forensics LLP provides forensic tax review services in Kenya."
+    },
+    overview: {
+      heading: "What Is a Forensic Tax Review?",
+      paragraphs: ["A forensic tax review involves detailed examination of financial information for tax-related questions."]
+    },
+    services: [
+      { title: "Historical Financial Analysis", description: "Analysis of historical financial information." },
+      { title: "Transaction Review", description: "Detailed review of transactions." }
+    ],
+    situations: ["Tax-related financial questions", "Financial record concerns", "Regulatory inquiries"],
+    process: [
+      { number: "01", title: "Understand the Question", description: "We establish the financial question." },
+      { number: "02", title: "Define Review Scope", description: "We establish an appropriate review scope." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "SMEs"],
+    audiences: ["Businesses", "Legal Professionals", "Tax Advisers"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent forensic tax review services."]
+    },
+    faqs: [
+      { question: "What is a forensic tax review?", answer: "It examines financial information for tax-related questions." }
+    ],
+    relatedServices: [
+      { title: "Tax Dispute Support", slug: "tax-dispute-support" }
+    ],
+    cta: {
+      heading: "Discuss Your Forensic Tax Review Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "tax-risk-assessments": {
+    slug: "tax-risk-assessments",
+    categorySlug: "tax-investigations-forensic-tax-services",
+    category: "Tax Investigations & Forensic Tax Services",
+    title: "Tax Risk Assessment Services in Kenya",
+    shortTitle: "Tax Risk Assessments",
+    eyebrow: "Tax Risk Assessments",
+    hero: {
+      heading: "Tax Risk Assessment Services in Kenya",
+      subheading: "Identification and Analysis of Tax-Related Financial Risks",
+      description: "Nairobi Forensics LLP provides tax risk assessment services in Kenya."
+    },
+    overview: {
+      heading: "What Is a Tax Risk Assessment?",
+      paragraphs: ["A tax risk assessment involves systematic analysis of financial information to identify tax risks."]
+    },
+    services: [
+      { title: "Financial Record Inconsistencies", description: "Identification of inconsistencies in financial records." },
+      { title: "Complex Transactions", description: "Analysis of complex transactions for tax risk." }
+    ],
+    situations: ["Tax risk identification", "Financial record concerns", "Regulatory compliance"],
+    process: [
+      { number: "01", title: "Understand the Business", description: "We understand the business and tax context." },
+      { number: "02", title: "Identify Risk Areas", description: "We identify potential tax risk areas." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "SMEs"],
+    audiences: ["Businesses", "Legal Professionals", "Tax Advisers"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent tax risk assessment services."]
+    },
+    faqs: [
+      { question: "What is a tax risk assessment?", answer: "It identifies and assesses tax-related financial risks." }
+    ],
+    relatedServices: [
+      { title: "Forensic Tax Reviews", slug: "forensic-tax-reviews" }
+    ],
+    cta: {
+      heading: "Discuss Your Tax Risk Assessment Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "tax-audit-support": {
+    slug: "tax-audit-support",
+    categorySlug: "tax-investigations-forensic-tax-services",
+    category: "Tax Investigations & Forensic Tax Services",
+    title: "Tax Audit Support Services in Kenya",
+    shortTitle: "Tax Audit Support",
+    eyebrow: "Tax Audit Support",
+    hero: {
+      heading: "Tax Audit Support Services in Kenya",
+      subheading: "Independent Financial Analysis for Tax Audits",
+      description: "Nairobi Forensics LLP provides tax audit support services in Kenya."
+    },
+    overview: {
+      heading: "What Is Tax Audit Support?",
+      paragraphs: ["Tax audit support involves independent financial analysis to help organisations navigate tax audits."]
+    },
+    services: [
+      { title: "Financial Record Review", description: "Detailed review of financial records." },
+      { title: "Transaction Analysis", description: "Analysis of transactions for tax audit questions." }
+    ],
+    situations: ["Tax audits", "Complex tax queries", "Record inconsistencies"],
+    process: [
+      { number: "01", title: "Understand the Audit", description: "We establish the nature of the tax audit." },
+      { number: "02", title: "Define Support Scope", description: "We establish an appropriate support scope." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "SMEs"],
+    audiences: ["Businesses", "Taxpayers", "Legal Professionals"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent tax audit support services."]
+    },
+    faqs: [
+      { question: "What is tax audit support?", answer: "It provides independent financial analysis for tax audits." }
+    ],
+    relatedServices: [
+      { title: "Tax Dispute Support", slug: "tax-dispute-support" }
+    ],
+    cta: {
+      heading: "Discuss Your Tax Audit Support Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "tax-fraud-investigations": {
+    slug: "tax-fraud-investigations",
+    categorySlug: "tax-investigations-forensic-tax-services",
+    category: "Tax Investigations & Forensic Tax Services",
+    title: "Tax Fraud Investigation Services in Kenya",
+    shortTitle: "Tax Fraud Investigations",
+    eyebrow: "Tax Fraud Investigations",
+    hero: {
+      heading: "Tax Fraud Investigation Services in Kenya",
+      subheading: "Forensic Analysis of Tax-Related Financial Irregularities",
+      description: "Nairobi Forensics LLP provides tax fraud investigation services in Kenya."
+    },
+    overview: {
+      heading: "What Is a Tax Fraud Investigation?",
+      paragraphs: ["A tax fraud investigation examines financial records to investigate suspected tax fraud."]
+    },
+    services: [
+      { title: "Suspected Tax Fraud", description: "Investigation of suspected tax fraud." },
+      { title: "Unreported Transactions", description: "Examination of unreported transactions." }
+    ],
+    situations: ["Suspected tax fraud", "Unreported transactions", "Financial record inconsistencies"],
+    process: [
+      { number: "01", title: "Understand the Concern", description: "We establish the nature of the concern." },
+      { number: "02", title: "Define Investigation Scope", description: "We establish an appropriate scope." }
+    ],
+    industries: ["All Industries", "Corporate Organisations"],
+    audiences: ["Businesses", "Legal Professionals", "Tax Advisers"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent tax fraud investigation services."]
+    },
+    faqs: [
+      { question: "What is a tax fraud investigation?", answer: "It examines financial records to investigate suspected tax fraud." }
+    ],
+    relatedServices: [
+      { title: "Forensic Tax Reviews", slug: "forensic-tax-reviews" }
+    ],
+    cta: {
+      heading: "Discuss Your Tax Fraud Investigation Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  // ============================================================
+  // ASSET TRACING & RECOVERY SUPPORT
+  // ============================================================
+
+  "asset-tracing": {
+    slug: "asset-tracing",
+    categorySlug: "asset-tracing-recovery-support",
+    category: "Asset Tracing & Recovery Support",
+    title: "Asset Tracing Services in Kenya",
+    shortTitle: "Asset Tracing",
+    eyebrow: "Asset Tracing Services",
+    hero: {
+      heading: "Asset Tracing Services in Kenya",
+      subheading: "Financial Investigation and Analysis to Trace Relevant Assets",
+      description: "Nairobi Forensics LLP provides asset tracing services in Kenya."
+    },
+    overview: {
+      heading: "What Is Asset Tracing?",
+      paragraphs: ["Asset tracing involves financial analysis to identify assets and financial relationships."]
+    },
+    services: [
+      { title: "Asset Identification", description: "Identification of assets through financial analysis." },
+      { title: "Source of Funds Analysis", description: "Analysis of sources of funds." }
+    ],
+    situations: ["Fraud investigations", "Asset concealment", "Dispute resolution"],
+    process: [
+      { number: "01", title: "Define the Objective", description: "We identify the financial questions." },
+      { number: "02", title: "Review Available Information", description: "Relevant financial records are analysed." }
+    ],
+    industries: ["Financial Services", "Legal Profession", "Insurance"],
+    audiences: ["Legal Professionals", "Businesses", "Financial Institutions"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent asset tracing services."]
+    },
+    faqs: [
+      { question: "What is asset tracing?", answer: "It identifies assets and financial relationships through analysis." }
+    ],
+    relatedServices: [
+      { title: "Forensic Accounting", slug: "forensic-accounting" }
+    ],
+    cta: {
+      heading: "Contact Nairobi Forensics LLP",
+      text: "Speak to Nairobi Forensics LLP about asset tracing requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  // ============================================================
+  // LITIGATION, DISPUTES & EXPERT SERVICES
+  // ============================================================
+
+  "litigation-support": {
+    slug: "litigation-support",
+    categorySlug: "litigation-disputes-expert-services",
+    category: "Litigation, Disputes & Expert Services",
+    title: "Litigation Support Services in Kenya",
+    shortTitle: "Litigation Support",
+    eyebrow: "Litigation Support Services",
+    hero: {
+      heading: "Litigation Support Services in Kenya",
+      subheading: "Independent Financial Analysis for Complex Disputes",
+      description: "Nairobi Forensics LLP provides litigation support services in Kenya."
+    },
+    overview: {
+      heading: "What Is Litigation Support?",
+      paragraphs: ["Litigation support involves independent financial analysis for legal disputes."]
+    },
+    services: [
+      { title: "Financial Analysis", description: "Independent financial analysis for litigation." },
+      { title: "Expert Reporting", description: "Preparation of expert reports." }
+    ],
+    situations: ["Commercial disputes", "Shareholder disputes", "Partnership disputes"],
+    process: [
+      { number: "01", title: "Understand the Financial Issues", description: "We identify the financial questions." },
+      { number: "02", title: "Analyse Evidence", description: "Relevant records and calculations are reviewed." }
+    ],
+    industries: ["Legal Profession", "Financial Services", "Insurance"],
+    audiences: ["Legal Professionals", "Businesses", "Financial Institutions"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent litigation support services."]
+    },
+    faqs: [
+      { question: "What is litigation support?", answer: "It provides financial analysis for legal disputes." }
+    ],
+    relatedServices: [
+      { title: "Expert Witness Services", slug: "expert-witness-services" }
+    ],
+    cta: {
+      heading: "Contact Nairobi Forensics LLP",
+      text: "Contact us for independent litigation and financial dispute support.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "expert-witness-services": {
+    slug: "expert-witness-services",
+    categorySlug: "litigation-disputes-expert-services",
+    category: "Litigation, Disputes & Expert Services",
+    title: "Expert Witness Services in Kenya",
+    shortTitle: "Expert Witness Services",
+    eyebrow: "Expert Witness Services",
+    hero: {
+      heading: "Expert Witness Services in Kenya",
+      subheading: "Independent Financial and Forensic Expertise for Disputes",
+      description: "Nairobi Forensics LLP provides expert witness services in Kenya."
+    },
+    overview: {
+      heading: "What Are Expert Witness Services?",
+      paragraphs: ["Expert witness services provide independent financial analysis for legal proceedings."]
+    },
+    services: [
+      { title: "Independent Financial Analysis", description: "Independent analysis for expert witness purposes." },
+      { title: "Expert Financial Opinions", description: "Provision of expert financial opinions." }
+    ],
+    situations: ["Litigation requiring expert evidence", "Dispute resolution", "Regulatory proceedings"],
+    process: [
+      { number: "01", title: "Understand the Matter", description: "We establish the nature of the matter." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate expert scope." }
+    ],
+    industries: ["Legal Profession", "Financial Services", "Insurance"],
+    audiences: ["Legal Professionals", "Dispute Resolution Practitioners"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent expert witness services."]
+    },
+    faqs: [
+      { question: "What are expert witness services?", answer: "They provide financial analysis and opinions for legal proceedings." }
+    ],
+    relatedServices: [
+      { title: "Litigation Support", slug: "litigation-support" }
+    ],
+    cta: {
+      heading: "Contact Nairobi Forensics LLP",
+      text: "Discuss your financial expert and forensic support requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "financial-loss-quantification": {
+    slug: "financial-loss-quantification",
+    categorySlug: "litigation-disputes-expert-services",
+    category: "Litigation, Disputes & Expert Services",
+    title: "Financial Loss Quantification Services in Kenya",
+    shortTitle: "Financial Loss Quantification",
+    eyebrow: "Loss Quantification Services",
+    hero: {
+      heading: "Financial Loss Quantification Services in Kenya",
+      subheading: "Independent Calculation of Financial Losses",
+      description: "Nairobi Forensics LLP provides loss quantification services in Kenya."
+    },
+    overview: {
+      heading: "What Is Financial Loss Quantification?",
+      paragraphs: ["Financial loss quantification involves systematic assessment and calculation of financial losses."]
+    },
+    services: [
+      { title: "Define Financial Question", description: "We establish the loss quantification question." },
+      { title: "Review Records", description: "Relevant financial records are reviewed." }
+    ],
+    situations: ["Fraud-related losses", "Commercial disputes", "Breach of contract"],
+    process: [
+      { number: "01", title: "Define the Financial Question", description: "We establish the loss question." },
+      { number: "02", title: "Review Available Records", description: "Relevant financial records are reviewed." }
+    ],
+    industries: ["Financial Services", "Insurance", "Legal Profession"],
+    audiences: ["Legal Professionals", "Businesses", "Financial Institutions"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: ["We provide independent financial loss quantification services."]
+    },
+    faqs: [
+      { question: "What is financial loss quantification?", answer: "It calculates financial losses for disputes and claims." }
+    ],
+    relatedServices: [
+      { title: "Litigation Support", slug: "litigation-support" }
+    ],
+    cta: {
+      heading: "Discuss Your Matter",
+      text: "Contact Nairobi Forensics LLP for independent loss quantification.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  }
+
+  // ============================================================
+  // END OF SERVICES
+  // ============================================================
+
+  // ============================================================
+  // MISSING SERVICES - ADDED
+  // ============================================================
+
+  "fraud-audits": {
+    slug: "fraud-audits",
+    categorySlug: "forensic-accounting-financial-investigations",
+    category: "Forensic Accounting & Financial Investigations",
+    title: "Fraud Audit Services in Kenya",
+    shortTitle: "Fraud Audits",
+    eyebrow: "Fraud Audit Services",
+    hero: {
+      heading: "Fraud Audit Services in Kenya",
+      subheading: "Systematic Examination of Financial Records for Fraud Indicators",
+      description: "Nairobi Forensics LLP provides fraud audit services in Kenya for organisations requiring systematic examination of financial records, transactions and controls to identify fraud indicators and irregularities."
+    },
+    overview: {
+      heading: "What Is a Fraud Audit?",
+      paragraphs: [
+        "A fraud audit is a systematic examination of financial records, transactions and internal controls to identify fraud indicators, irregularities and potential exposure to fraud.",
+        "Our fraud audit services help organisations assess fraud risk, identify control weaknesses and detect potential fraudulent activity."
+      ]
+    },
+    services: [
+      { title: "Fraud Risk Assessment", description: "Assessment of fraud risks, control weaknesses and exposure to potential fraud." },
+      { title: "Transaction Testing", description: "Systematic testing of transactions to identify irregularities and fraud indicators." },
+      { title: "Internal Control Review", description: "Review of internal controls to identify weaknesses that may be exploited for fraud." },
+      { title: "Financial Record Examination", description: "Detailed examination of financial records for fraud indicators." }
+    ],
+    situations: [
+      "Suspected fraud",
+      "Control weaknesses",
+      "Unusual transactions",
+      "Whistleblower allegations",
+      "Financial irregularities",
+      "Regulatory concerns",
+      "Internal audit findings"
+    ],
+    process: [
+      { number: "01", title: "Understand the Risk Context", description: "We establish the fraud risk context, concerns and available information." },
+      { number: "02", title: "Define Audit Scope", description: "We establish an appropriate audit scope based on the risk context." },
+      { number: "03", title: "Review Controls", description: "We review internal controls to identify weaknesses and vulnerabilities." },
+      { number: "04", title: "Test Transactions", description: "We test transactions to identify irregularities and fraud indicators." },
+      { number: "05", title: "Analyse Findings", description: "We analyse findings to identify potential fraud and control weaknesses." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly with recommendations." }
+    ],
+    industries: ["Financial Services", "Manufacturing", "Construction", "Real Estate", "Insurance"],
+    audiences: ["Audit Committees", "Boards", "Management", "Internal Audit", "Organisations"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent fraud audit services using a systematic approach to identify fraud risks, control weaknesses and potential fraudulent activity.",
+        "Our fraud audit methodology helps organisations assess exposure to fraud and implement appropriate controls."
+      ]
+    },
+    faqs: [
+      { question: "What is a fraud audit?", answer: "A fraud audit is a systematic examination of financial records, transactions and internal controls to identify fraud indicators, irregularities and potential exposure to fraud." },
+      { question: "How does a fraud audit differ from a regular audit?", answer: "A regular audit focuses on financial reporting accuracy, while a fraud audit focuses specifically on identifying fraud risks, indicators and irregularities." },
+      { question: "When should an organisation conduct a fraud audit?", answer: "An organisation may conduct a fraud audit when there are fraud concerns, control weaknesses, whistleblower allegations or regulatory requirements." }
+    ],
+    relatedServices: [
+      { title: "Fraud Investigations", slug: "fraud-investigations" },
+      { title: "Forensic Accounting", slug: "forensic-accounting" },
+      { title: "Financial Forensic Audits", slug: "financial-forensic-audits" }
+    ],
+    cta: {
+      heading: "Discuss Your Fraud Audit Requirements",
+      text: "Contact Nairobi Forensics LLP to discuss your fraud audit requirements or concerns.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "financial-crime-investigations": {
+    slug: "financial-crime-investigations",
+    categorySlug: "financial-crime-complex-investigations",
+    category: "Financial Crime & Complex Investigations",
+    title: "Financial Crime Investigation Services in Kenya",
+    shortTitle: "Financial Crime Investigations",
+    eyebrow: "Financial Crime Investigations",
+    hero: {
+      heading: "Financial Crime Investigation Services in Kenya",
+      subheading: "Independent Investigation of Financial Crimes and Complex Transactions",
+      description: "Nairobi Forensics LLP provides financial crime investigation services in Kenya for organisations dealing with fraud, money laundering-related financial activity, corruption, financial misconduct and complex financial transactions."
+    },
+    overview: {
+      heading: "What Is a Financial Crime Investigation?",
+      paragraphs: [
+        "A financial crime investigation involves the systematic examination of financial records, transactions and evidence to investigate financial crimes including fraud, money laundering, corruption and financial misconduct.",
+        "Our investigations help organisations understand financial crimes, identify perpetrators, assess impact and take appropriate action."
+      ]
+    },
+    services: [
+      { title: "Fraud", description: "Investigation of fraud and fraudulent financial activity." },
+      { title: "Money Laundering-Related Financial Activity", description: "Analysis of financial activity related to money laundering concerns." },
+      { title: "Misappropriation", description: "Investigation of asset and fund misappropriation." },
+      { title: "Financial Misconduct", description: "Investigation of financial misconduct and irregularities." },
+      { title: "Suspicious Transactions", description: "Analysis of suspicious transactions and financial activity." }
+    ],
+    situations: [
+      "Financial fraud",
+      "Money laundering-related concerns",
+      "Corruption-related financial activity",
+      "Financial misconduct",
+      "Suspicious transactions",
+      "Unexplained wealth",
+      "Diversion of funds"
+    ],
+    process: [
+      { number: "01", title: "Intelligence & Information", description: "We gather and review available information and intelligence." },
+      { number: "02", title: "Scope", description: "We establish an appropriate investigation scope." },
+      { number: "03", title: "Financial Records", description: "Relevant financial records and transactions are reviewed." },
+      { number: "04", title: "Transaction Analysis", description: "We analyse transactions, patterns and relationships." },
+      { number: "05", title: "Relationship Analysis", description: "We analyse financial relationships and connections." },
+      { number: "06", title: "Evidence Assessment", description: "We assess available evidence and corroborate findings." },
+      { number: "07", title: "Findings", description: "Our findings are communicated clearly based on the investigation." }
+    ],
+    industries: ["Financial Services", "Banking", "Insurance", "Real Estate", "Professional Services", "Government"],
+    audiences: ["Boards and Directors", "Management", "Legal Professionals", "Financial Institutions", "Regulators"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent financial crime investigation services using a structured approach that combines financial analysis, transaction examination and investigative techniques.",
+        "Our multidisciplinary expertise helps organisations understand financial crimes and take appropriate action."
+      ]
+    },
+    faqs: [
+      { question: "What is a financial crime investigation?", answer: "A financial crime investigation involves the systematic examination of financial records, transactions and evidence to investigate financial crimes including fraud, money laundering, corruption and financial misconduct." },
+      { question: "What types of financial crimes do you investigate?", answer: "We investigate fraud, money laundering-related financial activity, corruption, financial misconduct, misappropriation and complex financial transactions." },
+      { question: "How does a financial crime investigation work?", answer: "A financial crime investigation involves gathering information, reviewing financial records, analysing transactions, assessing evidence and reporting findings." }
+    ],
+    relatedServices: [
+      { title: "Anti-Money Laundering Experts", slug: "anti-money-laundering-experts" },
+      { title: "Transaction Analysis", slug: "transaction-analysis" },
+      { title: "Forensic Accounting", slug: "forensic-accounting" }
+    ],
+    cta: {
+      heading: "Discuss Your Financial Crime Investigation Requirements",
+      text: "If you have financial crime concerns or require investigation support, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "cross-border-forensic-investigations": {
+    slug: "cross-border-forensic-investigations",
+    categorySlug: "financial-crime-complex-investigations",
+    category: "Financial Crime & Complex Investigations",
+    title: "Cross-Border Forensic Investigation Services",
+    shortTitle: "Cross-Border Forensic Investigations",
+    eyebrow: "Cross-Border Forensic Investigations",
+    hero: {
+      heading: "Cross-Border Forensic Investigation Services",
+      subheading: "Complex Financial Investigations Across Multiple Jurisdictions",
+      description: "Nairobi Forensics LLP supports complex financial investigations involving transactions, businesses, assets or financial relationships spanning multiple jurisdictions, with particular focus on East Africa and internationally connected matters."
+    },
+    overview: {
+      heading: "What Is a Cross-Border Forensic Investigation?",
+      paragraphs: [
+        "Cross-border forensic investigations involve the examination of financial records, transactions and evidence where financial activity spans multiple jurisdictions, involving international transactions, entities, assets and financial relationships.",
+        "We analyse available financial information and coordinate with relevant professional advisers and specialists where matters involve multiple jurisdictions."
+      ]
+    },
+    services: [
+      { title: "Cross-Border Transactions", description: "Analysis of cross-border transactions and financial movements." },
+      { title: "International Fund Movements", description: "Analysis of international fund movements through available records." },
+      { title: "Multi-Jurisdiction Entities", description: "Examination of entities operating across multiple jurisdictions." },
+      { title: "International Business Relationships", description: "Analysis of international business relationships and transactions." }
+    ],
+    situations: [
+      "Cross-border financial disputes",
+      "International fraud investigations",
+      "Multi-jurisdiction asset tracing",
+      "International money laundering concerns",
+      "Cross-border business disputes"
+    ],
+    process: [
+      { number: "01", title: "Understand the Matter", description: "We establish the nature of the cross-border financial matter." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate investigation scope." },
+      { number: "03", title: "Review Financial Information", description: "Relevant financial records and transaction data are reviewed." },
+      { number: "04", title: "Analyse Cross-Border Activity", description: "We analyse cross-border transactions and relationships." },
+      { number: "05", title: "Coordinate with Specialists", description: "We coordinate with relevant professional advisers and specialists." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["Financial Services", "Banking", "Professional Services", "International Business", "Corporate Organisations"],
+    audiences: ["Legal Professionals", "Businesses", "Financial Institutions", "Investigators", "Regulators"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides cross-border forensic investigation support using a structured approach that combines financial analysis, transaction examination and coordination with international specialists.",
+        "Our expertise in East African financial matters combined with international connections supports complex cross-border investigations."
+      ]
+    },
+    faqs: [
+      { question: "What is a cross-border forensic investigation?", answer: "A cross-border forensic investigation involves the examination of financial records, transactions and evidence where financial activity spans multiple jurisdictions." },
+      { question: "What does a cross-border investigation examine?", answer: "A cross-border investigation may examine cross-border transactions, international fund movements, multi-jurisdiction entities and international business relationships." },
+      { question: "How do you handle matters involving multiple jurisdictions?", answer: "We analyse available financial information and coordinate with relevant professional advisers and specialists where matters involve multiple jurisdictions." }
+    ],
+    relatedServices: [
+      { title: "Asset Tracing", slug: "asset-tracing" },
+      { title: "Transaction Analysis", slug: "transaction-analysis" },
+      { title: "Financial Crime Investigations", slug: "financial-crime-investigations" }
+    ],
+    cta: {
+      heading: "Discuss Your Cross-Border Investigation Requirements",
+      text: "If you require cross-border forensic investigation support, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "transaction-analysis": {
+    slug: "transaction-analysis",
+    categorySlug: "financial-crime-complex-investigations",
+    category: "Financial Crime & Complex Investigations",
+    title: "Financial Transaction Analysis Services in Kenya",
+    shortTitle: "Transaction Analysis",
+    eyebrow: "Financial Transaction Analysis",
+    hero: {
+      heading: "Financial Transaction Analysis Services in Kenya",
+      subheading: "Detailed Examination of Financial Transactions and Patterns",
+      description: "Nairobi Forensics LLP provides financial transaction analysis services in Kenya for organisations requiring detailed examination of transactions, patterns, relationships and financial activity."
+    },
+    overview: {
+      heading: "What Is Transaction Analysis?",
+      paragraphs: [
+        "Transaction analysis involves the detailed examination of financial transactions to identify patterns, anomalies, relationships and activity requiring further investigation.",
+        "Our transaction analysis helps organisations understand financial activity, identify concerns and investigate irregularities."
+      ]
+    },
+    services: [
+      { title: "Bank Transactions", description: "Analysis of bank transactions, movements and relationships." },
+      { title: "Payments", description: "Detailed review of payments and payment patterns." },
+      { title: "Transfers", description: "Analysis of fund transfers and movements." },
+      { title: "Supplier Transactions", description: "Review of supplier transactions and relationships." },
+      { title: "Customer Transactions", description: "Analysis of customer transactions and patterns." },
+      { title: "Related-Party Transactions", description: "Identification and analysis of related-party transactions." }
+    ],
+    situations: [
+      "Unexplained transactions",
+      "Transaction irregularities",
+      "Unusual patterns",
+      "Related-party concerns",
+      "Duplicate payments",
+      "Cash flow questions"
+    ],
+    process: [
+      { number: "01", title: "Understand the Question", description: "We establish the transaction analysis question and objectives." },
+      { number: "02", title: "Gather Data", description: "Relevant transaction data and records are gathered." },
+      { number: "03", title: "Analyse Transactions", description: "We analyse transactions, patterns and relationships." },
+      { number: "04", title: "Identify Anomalies", description: "We identify anomalies, irregularities and concerning patterns." },
+      { number: "05", title: "Corroborate Findings", description: "Findings are corroborated using available evidence." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["Financial Services", "Banking", "Professional Services", "Corporate Organisations", "Insurance"],
+    audiences: ["Businesses", "Financial Institutions", "Legal Professionals", "Investigators"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent transaction analysis services using a structured approach to identify patterns, anomalies and concerning activity.",
+        "Our analysis helps organisations understand financial activity and address concerns appropriately."
+      ]
+    },
+    faqs: [
+      { question: "What is transaction analysis?", answer: "Transaction analysis involves the detailed examination of financial transactions to identify patterns, anomalies, relationships and activity requiring further investigation." },
+      { question: "What does transaction analysis examine?", answer: "Transaction analysis may examine bank transactions, payments, transfers, supplier transactions, customer transactions and related-party transactions." },
+      { question: "When is transaction analysis needed?", answer: "Transaction analysis may be needed for unexplained transactions, irregularities, unusual patterns and transaction reconstruction." }
+    ],
+    relatedServices: [
+      { title: "Forensic Data Analytics", slug: "forensic-data-analytics" },
+      { title: "Financial Crime Investigations", slug: "financial-crime-investigations" },
+      { title: "Forensic Accounting", slug: "forensic-accounting" }
+    ],
+    cta: {
+      heading: "Discuss Your Transaction Analysis Requirements",
+      text: "If you require transaction analysis services, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "cross-border-asset-tracing": {
+    slug: "cross-border-asset-tracing",
+    categorySlug: "asset-tracing-recovery-support",
+    category: "Asset Tracing & Recovery Support",
+    title: "Cross-Border Asset Tracing Services",
+    shortTitle: "Cross-Border Asset Tracing",
+    eyebrow: "Cross-Border Asset Tracing",
+    hero: {
+      heading: "Cross-Border Asset Tracing Services",
+      subheading: "International Financial Analysis and Asset Identification",
+      description: "Nairobi Forensics LLP provides cross-border asset tracing services for financial analysis across multiple jurisdictions, international fund movements and global asset identification."
+    },
+    overview: {
+      heading: "What Is Cross-Border Asset Tracing?",
+      paragraphs: [
+        "Cross-border asset tracing involves financial analysis to identify assets, fund movements and financial relationships across multiple jurisdictions.",
+        "We analyse available financial information and coordinate with relevant professional advisers and specialists where matters involve multiple jurisdictions."
+      ]
+    },
+    services: [
+      { title: "Cross-Border Transaction Analysis", description: "Analysis of cross-border transactions and fund movements." },
+      { title: "Financial Relationship Analysis", description: "Analysis of cross-border financial relationships." },
+      { title: "International Fund Movement Analysis", description: "Analysis of international fund movements through available records." },
+      { title: "Entity and Ownership Analysis", description: "Analysis of entities and ownership across jurisdictions." }
+    ],
+    situations: [
+      "International fraud investigations",
+      "Cross-border asset concealment",
+      "International disputes",
+      "Global insolvency matters",
+      "International recovery proceedings"
+    ],
+    process: [
+      { number: "01", title: "Understand the Matter", description: "We establish the nature of the cross-border asset tracing matter." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate tracing scope." },
+      { number: "03", title: "Review Financial Information", description: "Relevant financial records and transaction data are reviewed." },
+      { number: "04", title: "Trace Funds", description: "We trace fund movements across jurisdictions." },
+      { number: "05", title: "Identify Assets", description: "We identify assets and financial relationships." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["Financial Services", "Legal Profession", "International Business", "Insurance", "Corporate Organisations"],
+    audiences: ["Legal Professionals", "Businesses", "Financial Institutions", "Investigators"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent cross-border asset tracing services using a structured approach that combines financial analysis, international research and coordination with specialists.",
+        "Our expertise in East African financial matters combined with international connections supports cross-border asset tracing."
+      ]
+    },
+    faqs: [
+      { question: "What is cross-border asset tracing?", answer: "Cross-border asset tracing involves financial analysis to identify assets, fund movements and financial relationships across multiple jurisdictions." },
+      { question: "What does cross-border asset tracing examine?", answer: "Cross-border asset tracing may examine cross-border transactions, international fund movements, entities, ownership and financial relationships." },
+      { question: "How do you handle cross-border matters?", answer: "We analyse available financial information and coordinate with relevant professional advisers and specialists where matters involve multiple jurisdictions." }
+    ],
+    relatedServices: [
+      { title: "Asset Tracing", slug: "asset-tracing" },
+      { title: "Asset Recovery Support", slug: "asset-recovery-support" },
+      { title: "Cross-Border Forensic Investigations", slug: "cross-border-forensic-investigations" }
+    ],
+    cta: {
+      heading: "Discuss Your Cross-Border Asset Tracing Requirements",
+      text: "If you require cross-border asset tracing services, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "asset-recovery-support": {
+    slug: "asset-recovery-support",
+    categorySlug: "asset-tracing-recovery-support",
+    category: "Asset Tracing & Recovery Support",
+    title: "Asset Recovery Support Services in Kenya",
+    shortTitle: "Asset Recovery Support",
+    eyebrow: "Asset Recovery Support",
+    hero: {
+      heading: "Asset Recovery Support Services in Kenya",
+      subheading: "Financial Investigation and Analytical Support for Asset Recovery",
+      description: "Nairobi Forensics LLP provides financial investigation and analytical support that may assist asset recovery and enforcement efforts in Kenya and internationally."
+    },
+    overview: {
+      heading: "What Is Asset Recovery Support?",
+      paragraphs: [
+        "Asset recovery support involves financial investigation, transaction tracing and analytical services that may assist asset recovery and enforcement efforts.",
+        "We provide financial investigation and analytical support that may assist asset recovery and enforcement efforts."
+      ]
+    },
+    services: [
+      { title: "Asset Tracing", description: "Financial analysis to identify assets and financial relationships." },
+      { title: "Transaction Tracing", description: "Analysis of transactions and fund movements." },
+      { title: "Financial Analysis", description: "Analysis of financial information for recovery support." },
+      { title: "Ownership Analysis", description: "Analysis of asset ownership and beneficial interests." },
+      { title: "Funds-Flow Analysis", description: "Analysis of fund flows and movements." }
+    ],
+    situations: [
+      "Fraud recovery",
+      "Asset recovery proceedings",
+      "Enforcement support",
+      "Litigation support",
+      "Insolvency recoveries"
+    ],
+    process: [
+      { number: "01", title: "Understand the Matter", description: "We establish the nature of the recovery matter and objectives." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate support scope." },
+      { number: "03", title: "Review Financial Information", description: "Relevant financial records and transactions are reviewed." },
+      { number: "04", title: "Trace Funds", description: "We trace fund movements through available records." },
+      { number: "05", title: "Identify Assets", description: "We identify assets and financial relationships." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["Financial Services", "Legal Profession", "Insurance", "Corporate Organisations", "Government"],
+    audiences: ["Legal Professionals", "Businesses", "Financial Institutions", "Insurers", "Investigators"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent asset recovery support services using a structured approach that combines financial investigation, transaction tracing and analytical capabilities.",
+        "Our support helps organisations identify assets and pursue recovery efforts."
+      ]
+    },
+    faqs: [
+      { question: "What is asset recovery support?", answer: "Asset recovery support involves financial investigation, transaction tracing and analytical services that may assist asset recovery and enforcement efforts." },
+      { question: "What does asset recovery support involve?", answer: "Asset recovery support may involve asset tracing, transaction tracing, financial analysis, ownership analysis and reporting." },
+      { question: "When is asset recovery support needed?", answer: "Asset recovery support may be needed for fraud recovery, asset recovery proceedings, enforcement support and litigation support." }
+    ],
+    relatedServices: [
+      { title: "Asset Tracing", slug: "asset-tracing" },
+      { title: "Cross-Border Asset Tracing", slug: "cross-border-asset-tracing" },
+      { title: "Forensic Accounting", slug: "forensic-accounting" }
+    ],
+    cta: {
+      heading: "Discuss Your Asset Recovery Support Requirements",
+      text: "If you require asset recovery support, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "asset-verification": {
+    slug: "asset-verification",
+    categorySlug: "asset-tracing-recovery-support",
+    category: "Asset Tracing & Recovery Support",
+    title: "Asset Verification Services in Kenya",
+    shortTitle: "Asset Verification",
+    eyebrow: "Asset Verification Services",
+    hero: {
+      heading: "Asset Verification Services in Kenya",
+      subheading: "Financial Analysis and Verification of Asset Information",
+      description: "Nairobi Forensics LLP provides asset verification services in Kenya for organisations requiring financial analysis, ownership review, transaction history analysis and due diligence."
+    },
+    overview: {
+      heading: "What Is Asset Verification?",
+      paragraphs: [
+        "Asset verification involves the analysis and verification of asset information through financial records, transaction history, ownership information and supporting documentation.",
+        "Our asset verification services help organisations confirm asset information and identify concerns."
+      ]
+    },
+    services: [
+      { title: "Financial Asset Analysis", description: "Analysis of financial information relating to assets." },
+      { title: "Ownership Information Review", description: "Review of asset ownership and beneficial interests." },
+      { title: "Asset Documentation Review", description: "Review of documentation supporting asset information." },
+      { title: "Transaction History Analysis", description: "Analysis of transaction history relating to assets." },
+      { title: "Financial Record Verification", description: "Verification of asset information in financial records." }
+    ],
+    situations: [
+      "Litigation support",
+      "Due diligence",
+      "Insolvency matters",
+      "Investment review",
+      "Fraud investigations",
+      "Commercial disputes"
+    ],
+    process: [
+      { number: "01", title: "Understand the Question", description: "We establish the asset verification question and objectives." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate verification scope." },
+      { number: "03", title: "Review Financial Information", description: "Relevant financial records and documentation are reviewed." },
+      { number: "04", title: "Analyse Asset Information", description: "We analyse asset information and supporting records." },
+      { number: "05", title: "Verify Findings", description: "We verify asset information through available records." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["Financial Services", "Legal Profession", "Insurance", "Real Estate", "Corporate Organisations"],
+    audiences: ["Legal Professionals", "Businesses", "Financial Institutions", "Investors"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent asset verification services using a structured approach that combines financial analysis, record review and verification techniques.",
+        "Our services help organisations confirm asset information and identify concerns."
+      ]
+    },
+    faqs: [
+      { question: "What is asset verification?", answer: "Asset verification involves the analysis and verification of asset information through financial records, transaction history, ownership information and supporting documentation." },
+      { question: "What does asset verification examine?", answer: "Asset verification may examine financial asset information, ownership information, transaction history, documentation and financial records." },
+      { question: "When is asset verification needed?", answer: "Asset verification may be needed for litigation support, due diligence, insolvency matters, investment review and fraud investigations." }
+    ],
+    relatedServices: [
+      { title: "Asset Tracing", slug: "asset-tracing" },
+      { title: "Financial Due Diligence", slug: "financial-due-diligence" },
+      { title: "Asset Recovery Support", slug: "asset-recovery-support" }
+    ],
+    cta: {
+      heading: "Discuss Your Asset Verification Requirements",
+      text: "If you require asset verification services, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "economic-damages-quantification": {
+    slug: "economic-damages-quantification",
+    categorySlug: "litigation-disputes-expert-services",
+    category: "Litigation, Disputes & Expert Services",
+    title: "Economic Damages Quantification Services in Kenya",
+    shortTitle: "Economic Damages Quantification",
+    eyebrow: "Economic Damages Quantification",
+    hero: {
+      heading: "Economic Damages Quantification Services in Kenya",
+      subheading: "Independent Assessment of Economic Impact and Damages",
+      description: "Nairobi Forensics LLP provides economic damages quantification services in Kenya for organisations requiring independent assessment of economic impact arising from events, disputes and breaches."
+    },
+    overview: {
+      heading: "What Is Economic Damages Quantification?",
+      paragraphs: [
+        "Economic damages quantification involves analysing financial information to estimate the economic impact arising from an event, dispute, breach or other circumstance.",
+        "Our services help organisations understand economic impact and support claims or disputes."
+      ]
+    },
+    services: [
+      { title: "Lost Profits", description: "Analysis and quantification of lost profits." },
+      { title: "Lost Revenue", description: "Analysis and quantification of lost revenue." },
+      { title: "Additional Costs", description: "Analysis of additional costs arising from events." },
+      { title: "Business Interruption", description: "Quantification of business interruption impact." },
+      { title: "Reduced Business Value", description: "Analysis of reduced business value." }
+    ],
+    situations: [
+      "Breach of contract",
+      "Commercial disputes",
+      "Business interruption",
+      "Insurance claims",
+      "Professional negligence",
+      "Economic loss claims"
+    ],
+    process: [
+      { number: "01", title: "Define Damages Question", description: "We establish the damages question and objectives." },
+      { number: "02", title: "Establish Relevant Period", description: "We establish the relevant damages period." },
+      { number: "03", title: "Review Historical Performance", description: "Historical financial performance is reviewed." },
+      { number: "04", title: "Develop Methodology", description: "An appropriate damages methodology is developed." },
+      { number: "05", title: "Analyse Causation", description: "Causation-related financial information is analysed." },
+      { number: "06", title: "Calculate Damages", description: "We calculate economic damages." },
+      { number: "07", title: "Test Assumptions", description: "Assumptions are tested for reasonableness." },
+      { number: "08", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "Insurance", "Legal Profession", "Financial Services"],
+    audiences: ["Legal Professionals", "Businesses", "Financial Institutions", "Insurers"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent economic damages quantification services using a structured approach that combines financial analysis, methodology development and clear reporting.",
+        "Our expertise helps organisations understand economic impact and support claims or disputes."
+      ]
+    },
+    faqs: [
+      { question: "What is economic damages quantification?", answer: "Economic damages quantification involves analysing financial information to estimate the economic impact arising from an event, dispute, breach or other circumstance." },
+      { question: "What does economic damages quantification involve?", answer: "It involves defining the question, reviewing historical performance, developing methodology, analysing causation, calculating damages and reporting findings." },
+      { question: "When is economic damages quantification needed?", answer: "It may be needed for breach of contract, commercial disputes, business interruption, insurance claims and professional negligence." }
+    ],
+    relatedServices: [
+      { title: "Financial Loss Quantification", slug: "financial-loss-quantification" },
+      { title: "Litigation Support", slug: "litigation-support" },
+      { title: "Expert Witness Services", slug: "expert-witness-services" }
+    ],
+    cta: {
+      heading: "Discuss Your Economic Damages Requirements",
+      text: "If you require economic damages quantification services, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "corporate-investigations": {
+    slug: "corporate-investigations",
+    categorySlug: "corporate-investigations-valuation-due-diligence",
+    category: "Corporate Investigations, Valuation & Due Diligence",
+    title: "Corporate Investigation Services in Kenya",
+    shortTitle: "Corporate Investigations",
+    eyebrow: "Corporate Investigations",
+    hero: {
+      heading: "Corporate Investigation Services in Kenya",
+      subheading: "Independent Investigation of Corporate Concerns and Irregularities",
+      description: "Nairobi Forensics LLP provides corporate investigation services in Kenya for organisations dealing with employee misconduct, financial irregularities, conflicts of interest, procurement issues and whistleblower allegations."
+    },
+    overview: {
+      heading: "What Is a Corporate Investigation?",
+      paragraphs: [
+        "A corporate investigation involves the systematic examination of concerns, allegations or irregularities within an organisation, including employee misconduct, financial irregularities, conflicts of interest and compliance matters.",
+        "Our investigations help organisations understand concerns, address risks and take appropriate action."
+      ]
+    },
+    services: [
+      { title: "Employee Misconduct", description: "Investigation of employee misconduct and policy violations." },
+      { title: "Management Concerns", description: "Investigation of management-related concerns." },
+      { title: "Financial Irregularities", description: "Investigation of financial irregularities and concerns." },
+      { title: "Conflicts of Interest", description: "Investigation of conflicts of interest." },
+      { title: "Related-Party Transactions", description: "Investigation of related-party transactions." },
+      { title: "Procurement Issues", description: "Investigation of procurement irregularities and concerns." }
+    ],
+    situations: [
+      "Employee misconduct",
+      "Financial irregularities",
+      "Conflict of interest concerns",
+      "Procurement issues",
+      "Asset misuse",
+      "Whistleblower allegations",
+      "Compliance concerns",
+      "Management issues"
+    ],
+    process: [
+      { number: "01", title: "Understand the Concern", description: "We establish the nature of the corporate concern." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate investigation scope." },
+      { number: "03", title: "Gather Information", description: "Relevant information and evidence are gathered." },
+      { number: "04", title: "Investigate", description: "We investigate concerns and allegations." },
+      { number: "05", title: "Corroborate Findings", description: "Findings are corroborated with evidence." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "Financial Services", "Manufacturing", "Professional Services"],
+    audiences: ["Boards and Directors", "Management", "Audit Committees", "Legal Professionals"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent corporate investigation services using a structured approach that combines investigative techniques, financial analysis and evidence review.",
+        "Our independence and objectivity help organisations address corporate concerns effectively."
+      ]
+    },
+    faqs: [
+      { question: "What is a corporate investigation?", answer: "A corporate investigation involves the systematic examination of concerns, allegations or irregularities within an organisation." },
+      { question: "What does a corporate investigation examine?", answer: "A corporate investigation may examine employee misconduct, financial irregularities, conflicts of interest, procurement issues and whistleblower allegations." },
+      { question: "When is a corporate investigation needed?", answer: "A corporate investigation may be needed when there are allegations of misconduct, financial irregularities, compliance concerns or whistleblower reports." }
+    ],
+    relatedServices: [
+      { title: "Fraud Investigations", slug: "fraud-investigations" },
+      { title: "Investigative Due Diligence", slug: "investigative-due-diligence" },
+      { title: "Forensic Accounting", slug: "forensic-accounting" }
+    ],
+    cta: {
+      heading: "Discuss Your Corporate Investigation Requirements",
+      text: "If you require corporate investigation services, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "business-valuation": {
+    slug: "business-valuation",
+    categorySlug: "corporate-investigations-valuation-due-diligence",
+    category: "Corporate Investigations, Valuation & Due Diligence",
+    title: "Business Valuation Services in Kenya",
+    shortTitle: "Business Valuation",
+    eyebrow: "Business Valuation Services",
+    hero: {
+      heading: "Business Valuation Services in Kenya",
+      subheading: "Independent Valuation for Transactions, Disputes and Decision-Making",
+      description: "Nairobi Forensics LLP provides business valuation services in Kenya for organisations requiring independent valuation for business transactions, shareholder disputes, litigation, mergers and acquisitions and investment decisions."
+    },
+    overview: {
+      heading: "What Is Business Valuation?",
+      paragraphs: [
+        "Business valuation involves the systematic analysis and assessment of a business's financial worth based on its financial performance, assets, market position and future prospects.",
+        "Our valuation services help organisations make informed decisions about transactions, disputes and strategic matters."
+      ]
+    },
+    services: [
+      { title: "Business Transactions", description: "Valuation for business transactions and acquisitions." },
+      { title: "Shareholder Disputes", description: "Valuation for shareholder and partnership disputes." },
+      { title: "Litigation", description: "Valuation for litigation and legal proceedings." },
+      { title: "Mergers and Acquisitions", description: "Valuation for mergers and acquisitions." },
+      { title: "Investment Decisions", description: "Valuation for investment decisions." },
+      { title: "Restructuring", description: "Valuation for restructuring matters." }
+    ],
+    situations: [
+      "Business sales and purchases",
+      "Shareholder disputes",
+      "Litigation requiring valuation",
+      "Mergers and acquisitions",
+      "Investment decisions",
+      "Restructuring",
+      "Succession planning"
+    ],
+    process: [
+      { number: "01", title: "Understand the Purpose", description: "We establish the valuation purpose and objectives." },
+      { number: "02", title: "Define Approach", description: "We define an appropriate valuation approach." },
+      { number: "03", title: "Review Financial Information", description: "Financial information and performance are reviewed." },
+      { number: "04", title: "Analyse Performance", description: "Revenue, profitability, cash flow and assets are analysed." },
+      { number: "05", title: "Assess Risks", description: "Business risks and future prospects are assessed." },
+      { number: "06", title: "Value Business", description: "We value the business using appropriate methodology." },
+      { number: "07", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "SMEs", "Family Businesses", "Professional Services"],
+    audiences: ["Businesses", "Investors", "Legal Professionals", "Financial Institutions"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent business valuation services using a structured approach that combines financial analysis, industry knowledge and valuation methodology.",
+        "Our valuations help organisations make informed decisions about transactions, disputes and strategic matters."
+      ]
+    },
+    faqs: [
+      { question: "What is business valuation?", answer: "Business valuation involves the systematic analysis and assessment of a business's financial worth based on its financial performance, assets, market position and future prospects." },
+      { question: "What does business valuation examine?", answer: "Business valuation examines historical performance, revenue, profitability, cash flow, assets, liabilities, market conditions and future prospects." },
+      { question: "When is business valuation needed?", answer: "Business valuation may be needed for transactions, shareholder disputes, litigation, mergers and acquisitions, investment decisions and succession planning." }
+    ],
+    relatedServices: [
+      { title: "Financial Due Diligence", slug: "financial-due-diligence" },
+      { title: "Litigation Support", slug: "litigation-support" },
+      { title: "Expert Witness Services", slug: "expert-witness-services" }
+    ],
+    cta: {
+      heading: "Discuss Your Business Valuation Requirements",
+      text: "If you require business valuation services, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "financial-due-diligence": {
+    slug: "financial-due-diligence",
+    categorySlug: "corporate-investigations-valuation-due-diligence",
+    category: "Corporate Investigations, Valuation & Due Diligence",
+    title: "Financial Due Diligence Services in Kenya",
+    shortTitle: "Financial Due Diligence",
+    eyebrow: "Financial Due Diligence",
+    hero: {
+      heading: "Financial Due Diligence Services in Kenya",
+      subheading: "Independent Financial Analysis for Transactions and Investments",
+      description: "Nairobi Forensics LLP provides financial due diligence services in Kenya for organisations requiring independent financial analysis for acquisitions, investments, partnerships, M&A and strategic transactions."
+    },
+    overview: {
+      heading: "What Is Financial Due Diligence?",
+      paragraphs: [
+        "Financial due diligence involves the systematic review and analysis of financial information, performance and risks to support investment, acquisition and transaction decisions.",
+        "Our due diligence services help organisations understand financial risks and opportunities."
+      ]
+    },
+    services: [
+      { title: "Revenue Quality", description: "Analysis of revenue quality and sustainability." },
+      { title: "Profitability", description: "Analysis of profitability and margins." },
+      { title: "Cash Flow", description: "Analysis of cash flow and liquidity." },
+      { title: "Working Capital", description: "Analysis of working capital requirements." },
+      { title: "Debt", description: "Analysis of debt and financial obligations." },
+      { title: "Liabilities", description: "Identification and analysis of liabilities." },
+      { title: "Financial Statements", description: "Review of financial statements." }
+    ],
+    situations: [
+      "Acquisitions",
+      "Investments",
+      "Partnerships",
+      "Mergers and acquisitions",
+      "Financing",
+      "Strategic transactions"
+    ],
+    process: [
+      { number: "01", title: "Understand the Transaction", description: "We establish the transaction context and objectives." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate due diligence scope." },
+      { number: "03", title: "Review Financial Information", description: "Financial information and documentation are reviewed." },
+      { number: "04", title: "Analyse Performance", description: "Performance, risks and concerns are analysed." },
+      { number: "05", title: "Identify Risks", description: "Risks and concerns are identified and assessed." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "Financial Services", "Manufacturing", "Real Estate"],
+    audiences: ["Investors", "Acquirers", "Financial Institutions", "Legal Professionals"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent financial due diligence services using a structured approach that combines financial analysis, risk identification and clear reporting.",
+        "Our due diligence helps organisations make informed transaction decisions."
+      ]
+    },
+    faqs: [
+      { question: "What is financial due diligence?", answer: "Financial due diligence involves the systematic review and analysis of financial information, performance and risks to support investment, acquisition and transaction decisions." },
+      { question: "What does financial due diligence examine?", answer: "Financial due diligence may examine revenue, profitability, cash flow, working capital, debt, liabilities, financial statements and unusual transactions." },
+      { question: "When is financial due diligence needed?", answer: "Financial due diligence may be needed for acquisitions, investments, partnerships, M&A and strategic transactions." }
+    ],
+    relatedServices: [
+      { title: "Investigative Due Diligence", slug: "investigative-due-diligence" },
+      { title: "Business Valuation", slug: "business-valuation" },
+      { title: "Independent Business Review", slug: "independent-business-review" }
+    ],
+    cta: {
+      heading: "Discuss Your Financial Due Diligence Requirements",
+      text: "If you require financial due diligence services, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "investigative-due-diligence": {
+    slug: "investigative-due-diligence",
+    categorySlug: "corporate-investigations-valuation-due-diligence",
+    category: "Corporate Investigations, Valuation & Due Diligence",
+    title: "Investigative Due Diligence Services in Kenya",
+    shortTitle: "Investigative Due Diligence",
+    eyebrow: "Investigative Due Diligence",
+    hero: {
+      heading: "Investigative Due Diligence Services in Kenya",
+      subheading: "Examination of Business Relationships and Potential Risks",
+      description: "Nairobi Forensics LLP provides investigative due diligence services for examining individuals, companies, business relationships, ownership structures and potential risks."
+    },
+    overview: {
+      heading: "What Is Investigative Due Diligence?",
+      paragraphs: [
+        "Investigative due diligence goes beyond conventional financial review by examining relevant information concerning individuals, companies, business relationships, ownership structures and potential risks.",
+        "Our due diligence helps organisations identify risks and make informed decisions."
+      ]
+    },
+    services: [
+      { title: "Ownership", description: "Examination of ownership structures and beneficial interests." },
+      { title: "Business Relationships", description: "Examination of business relationships and connections." },
+      { title: "Corporate Information", description: "Review of corporate information and records." },
+      { title: "Financial Concerns", description: "Identification of financial concerns and risks." },
+      { title: "Litigation-Related Information", description: "Review of litigation-related information." },
+      { title: "Reputation-Related Risks", description: "Identification of reputation-related risks." }
+    ],
+    situations: [
+      "Business acquisitions",
+      "Partnerships",
+      "Investments",
+      "Supplier relationships",
+      "Customer relationships",
+      "Strategic transactions"
+    ],
+    process: [
+      { number: "01", title: "Understand the Context", description: "We establish the due diligence context and objectives." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate due diligence scope." },
+      { number: "03", title: "Gather Information", description: "Relevant information is gathered and reviewed." },
+      { number: "04", title: "Analyse Findings", description: "Findings are analysed for risks and concerns." },
+      { number: "05", title: "Identify Risks", description: "Risks and concerns are identified and assessed." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "Financial Services", "Investment Firms", "Legal Profession"],
+    audiences: ["Investors", "Acquirers", "Financial Institutions", "Legal Professionals"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent investigative due diligence services using a structured approach that combines research, analysis and risk identification.",
+        "Our due diligence helps organisations identify risks and make informed decisions."
+      ]
+    },
+    faqs: [
+      { question: "What is investigative due diligence?", answer: "Investigative due diligence goes beyond conventional financial review by examining relevant information concerning individuals, companies, business relationships, ownership structures and potential risks." },
+      { question: "What does investigative due diligence examine?", answer: "Investigative due diligence may examine ownership, business relationships, corporate information, financial concerns, litigation, reputation and conflicts of interest." },
+      { question: "When is investigative due diligence needed?", answer: "Investigative due diligence may be needed for acquisitions, partnerships, investments and strategic transactions." }
+    ],
+    relatedServices: [
+      { title: "Financial Due Diligence", slug: "financial-due-diligence" },
+      { title: "Corporate Investigations", slug: "corporate-investigations" },
+      { title: "Business Valuation", slug: "business-valuation" }
+    ],
+    cta: {
+      heading: "Discuss Your Investigative Due Diligence Requirements",
+      text: "If you require investigative due diligence services, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  },
+
+  "independent-business-review": {
+    slug: "independent-business-review",
+    categorySlug: "corporate-investigations-valuation-due-diligence",
+    category: "Corporate Investigations, Valuation & Due Diligence",
+    title: "Independent Business Review Services in Kenya",
+    shortTitle: "Independent Business Review",
+    eyebrow: "Independent Business Review",
+    hero: {
+      heading: "Independent Business Review Services in Kenya",
+      subheading: "Objective Assessment of Business Performance and Viability",
+      description: "Nairobi Forensics LLP provides independent business review services in Kenya for organisations requiring objective assessment of financial performance, cash flow, debt, working capital, profitability and business viability."
+    },
+    overview: {
+      heading: "What Is an Independent Business Review?",
+      paragraphs: [
+        "An independent business review involves the objective assessment of a business's financial performance, cash flow, debt, working capital, profitability and viability.",
+        "Our reviews help organisations, lenders, investors and directors understand business performance and prospects."
+      ]
+    },
+    services: [
+      { title: "Financial Performance", description: "Analysis of financial performance and trends." },
+      { title: "Cash Flow", description: "Analysis of cash flow and liquidity." },
+      { title: "Debt", description: "Analysis of debt and financial obligations." },
+      { title: "Working Capital", description: "Analysis of working capital requirements." },
+      { title: "Profitability", description: "Analysis of profitability and margins." },
+      { title: "Business Model", description: "Assessment of business model and strategy." },
+      { title: "Operational Performance", description: "Analysis of operational performance." },
+      { title: "Viability", description: "Assessment of business viability and prospects." }
+    ],
+    situations: [
+      "Lender requirements",
+      "Investor requirements",
+      "Director obligations",
+      "Creditor concerns",
+      "Distressed businesses",
+      "Restructuring",
+      "Turnaround situations"
+    ],
+    process: [
+      { number: "01", title: "Understand the Context", description: "We establish the review context and objectives." },
+      { number: "02", title: "Define Scope", description: "We establish an appropriate review scope." },
+      { number: "03", title: "Review Financial Information", description: "Financial information and performance are reviewed." },
+      { number: "04", title: "Analyse Performance", description: "We analyse financial and operational performance." },
+      { number: "05", title: "Assess Viability", description: "We assess business viability and prospects." },
+      { number: "06", title: "Report", description: "Our findings are communicated clearly." }
+    ],
+    industries: ["All Industries", "Corporate Organisations", "SMEs", "Manufacturing", "Retail"],
+    audiences: ["Lenders", "Investors", "Directors", "Creditors", "Organisations"],
+    whyUs: {
+      heading: "Why Nairobi Forensics LLP?",
+      paragraphs: [
+        "Nairobi Forensics LLP provides independent business review services using a structured approach that combines financial analysis, operational assessment and viability evaluation.",
+        "Our reviews help organisations, lenders and investors understand business performance and prospects."
+      ]
+    },
+    faqs: [
+      { question: "What is an independent business review?", answer: "An independent business review involves the objective assessment of a business's financial performance, cash flow, debt, working capital, profitability and viability." },
+      { question: "What does an independent business review examine?", answer: "An independent business review may examine financial performance, cash flow, debt, working capital, profitability, business model and viability." },
+      { question: "When is an independent business review needed?", answer: "An independent business review may be needed for lender requirements, investor requirements, director obligations and distressed business situations." }
+    ],
+    relatedServices: [
+      { title: "Financial Due Diligence", slug: "financial-due-diligence" },
+      { title: "Business Valuation", slug: "business-valuation" },
+      { title: "Corporate Investigations", slug: "corporate-investigations" }
+    ],
+    cta: {
+      heading: "Discuss Your Independent Business Review Requirements",
+      text: "If you require an independent business review, contact Nairobi Forensics LLP to discuss your requirements.",
+      buttonText: "Speak to Our Experts",
+      buttonLink: "/contact"
+    }
+  }};
+
+export default servicesData;
+

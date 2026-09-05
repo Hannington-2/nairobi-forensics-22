@@ -1,0 +1,64 @@
+﻿/* src/components/Service/ServiceOverview.css */
+
+.service-overview {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.service-overview .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.service-overview-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.service-overview h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.service-overview h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #b8913e;
+  margin-top: 12px;
+  border-radius: 2px;
+}
+
+.service-overview p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.service-overview p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .service-overview {
+    padding: 50px 0;
+  }
+  .service-overview h2 {
+    font-size: 26px;
+  }
+  .service-overview p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-overview h2 {
+    font-size: 22px;
+  }
+}

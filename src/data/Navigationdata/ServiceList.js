@@ -1,4 +1,4 @@
-export const ServicesNavList= [
+﻿export const ServicesNavList = [
     {
       id: "forensic-accounting",
       title: "Forensic Accounting & Financial Investigations",
@@ -37,7 +37,6 @@ export const ServicesNavList= [
         }
       ]
     },
-  
     {
       id: "tax-investigations",
       title: "Tax Investigations & Forensic Tax Services",
@@ -71,7 +70,6 @@ export const ServicesNavList= [
         }
       ]
     },
-  
     {
       id: "financial-crime",
       title: "Financial Crime & Complex Investigations",
@@ -95,7 +93,6 @@ export const ServicesNavList= [
         }
       ]
     },
-  
     {
       id: "asset-tracing",
       title: "Asset Tracing & Recovery Support",
@@ -124,7 +121,6 @@ export const ServicesNavList= [
         }
       ]
     },
-  
     {
       id: "litigation-disputes",
       title: "Litigation, Disputes & Expert Services",
@@ -153,7 +149,6 @@ export const ServicesNavList= [
         }
       ]
     },
-  
     {
       id: "corporate-valuation",
       title: "Corporate Investigations, Valuation & Due Diligence",
@@ -188,3 +183,38 @@ export const ServicesNavList= [
       ]
     }
   ];
+
+// Helper function to get service by slug
+export const getServiceBySlug = (slug) => {
+  console.log("getServiceBySlug called with:", slug);
+  for (const category of ServicesNavList) {
+    console.log("Checking category:", category.slug);
+    const service = category.children.find(s => s.slug === slug);
+    if (service) {
+      console.log("Found service:", service.title);
+      return { 
+        ...service, 
+        categorySlug: category.slug, 
+        categoryTitle: category.title 
+      };
+    }
+  }
+  console.log("Service not found for slug:", slug);
+  return null;
+};
+
+// Helper function to get all service slugs
+export const getAllServiceSlugs = () => {
+  const slugs = [];
+  ServicesNavList.forEach(category => {
+    category.children.forEach(service => {
+      slugs.push(service.slug);
+    });
+  });
+  return slugs;
+};
+
+// Helper function to get category by slug
+export const getCategoryBySlug = (slug) => {
+  return ServicesNavList.find(cat => cat.slug === slug);
+};

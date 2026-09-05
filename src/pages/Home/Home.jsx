@@ -4,6 +4,10 @@ import {
   LuScale,
   LuChartNoAxesCombined,
   LuLandmark,
+  LuClipboardCheck,
+  LuSearchCheck,
+  LuFileCheck2,
+  LuArrowUpRight,
 } from "react-icons/lu";
 import Section from "../../components/common/Setcion/Section";
 import Sectionbutton from "../../components/common/Sectionbutton/Sectionbutton";
@@ -41,6 +45,27 @@ const whoWeHelp = [
 ];
 
 const serviceIcons = ["investigations", "tax", "crime", "recovery", "disputes", "corporate"];
+
+const workingProcess = [
+  {
+    number: "01",
+    title: "Understand the brief",
+    description: "We establish the facts, decision required, scope, and sensitivities before work begins.",
+    icon: LuClipboardCheck,
+  },
+  {
+    number: "02",
+    title: "Examine the evidence",
+    description: "Our team tests records, transactions, controls, and relevant information with disciplined independence.",
+    icon: LuSearchCheck,
+  },
+  {
+    number: "03",
+    title: "Explain what matters",
+    description: "We turn complex findings into clear conclusions, practical options, and defensible next steps.",
+    icon: LuFileCheck2,
+  },
+];
 
 const Home = () => {
   return (
@@ -96,13 +121,46 @@ const Home = () => {
           return (
             <ServiceCard
               key={service.path}
-              service={service}
-              description={content.intro}
+              title={service.title}
+              description={content?.intro || `Specialist support across ${service.title.toLowerCase()}.`}
+              href={service.path}
               icon={serviceIcons[index]}
             />
           );
         })}
       </div>
+    </section>
+
+    <section className="home-process-section" aria-labelledby="home-process-title">
+      <div className="home-process-heading">
+        <p className="home-process-eyebrow">HOW WE WORK</p>
+        <h2 id="home-process-title">A disciplined path from uncertainty to action.</h2>
+        <p>
+          Every engagement is shaped around its circumstances, with clear communication and evidence-led thinking at each stage.
+        </p>
+      </div>
+
+      <div className="home-process-grid">
+        {workingProcess.map((step) => {
+          const Icon = step.icon;
+
+          return (
+            <article className="home-process-card" key={step.number}>
+              <div className="home-process-card-top">
+                <span className="home-process-number">{step.number}</span>
+                <Icon aria-hidden="true" />
+              </div>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+              <span className="home-process-rule" aria-hidden="true" />
+            </article>
+          );
+        })}
+      </div>
+
+      <a className="home-process-link" href="/about/our-approach">
+        Explore our approach <LuArrowUpRight aria-hidden="true" />
+      </a>
     </section>
 
     <section className="who-we-help-section" aria-labelledby="who-we-help-title">
